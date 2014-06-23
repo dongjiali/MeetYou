@@ -81,6 +81,8 @@
 		CDCB605E19571963004E244B /* UIView+Boundaries.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB605D19571963004E244B /* UIView+Boundaries.m */; };
 		CDCB606319571DE0004E244B /* UserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB606119571DE0004E244B /* UserInfoTableViewCell.m */; };
 		CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB606219571DE0004E244B /* UserInfoTableViewCell.xib */; };
+		CDCB606A19573980004E244B /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB606719573980004E244B /* VPImageCropperViewController.m */; };
+		CDCB606B19573980004E244B /* VPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB606919573980004E244B /* VPViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,6 +208,10 @@
 		CDCB606019571DE0004E244B /* UserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTableViewCell.h; sourceTree = "<group>"; };
 		CDCB606119571DE0004E244B /* UserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTableViewCell.m; sourceTree = "<group>"; };
 		CDCB606219571DE0004E244B /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		CDCB606619573980004E244B /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
+		CDCB606719573980004E244B /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		CDCB606819573980004E244B /* VPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPViewController.h; sourceTree = "<group>"; };
+		CDCB606919573980004E244B /* VPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +376,7 @@
 		CDBA9B9C19308390006F292F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CDCB6065195738F7004E244B /* HeadView */,
 				CDBA9C3B19309431006F292F /* Commend */,
 				CDBA9C30193093DE006F292F /* Activities */,
 				CDBA9C2519309377006F292F /* Message */,
@@ -613,6 +620,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		CDCB6065195738F7004E244B /* HeadView */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB606619573980004E244B /* VPImageCropperViewController.h */,
+				CDCB606719573980004E244B /* VPImageCropperViewController.m */,
+				CDCB606819573980004E244B /* VPViewController.h */,
+				CDCB606919573980004E244B /* VPViewController.m */,
+			);
+			path = HeadView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -768,6 +786,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDCB606A19573980004E244B /* VPImageCropperViewController.m in Sources */,
 				CD39512C1931D7DB00E4CEA5 /* MTPhotoWall.m in Sources */,
 				CDBA9BFA19308D12006F292F /* LeftViewController.m in Sources */,
 				CDBA9C0D19308D29006F292F /* UserInfoNavigationController.m in Sources */,
@@ -778,6 +797,7 @@
 				CDBA9B781930835D006F292F /* AppDelegate.m in Sources */,
 				CD3951321931DF3600E4CEA5 /* MTPhoto.m in Sources */,
 				CDCB603F1957120C004E244B /* UserInfoDataManager.m in Sources */,
+				CDCB606B19573980004E244B /* VPViewController.m in Sources */,
 				CDBA9BFC19308D12006F292F /* MainViewController.m in Sources */,
 				CDCB60571957184C004E244B /* MJRefreshBaseView.m in Sources */,
 				CDBA9B741930835D006F292F /* main.m in Sources */,

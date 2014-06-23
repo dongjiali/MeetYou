@@ -8,7 +8,7 @@
 
 #import "RegisterViewController.h"
 
-@interface RegisterViewController ()
+@interface RegisterViewController ()<WBHttpRequestDelegate>
 @property (nonatomic,strong) MTNetWork *netWork;
 @end
 
@@ -46,14 +46,39 @@
 
 - (void)pushSeting:(id)infoUrl
 {
-    [self.navigationController popViewControllerAnimated:NO];
     NSLog(@"%@",[infoUrl valueForKey:@"object"]);
-    [_netWork getHttpURL:@"https://api.weibo.com/2/users/show.json" parameters:[infoUrl valueForKey:@"object"] completion:^(id results) {
-        NSLog(@"%@",results);
-    } failure:^(NSError *error) {
-        NSLog(@"%@",error);
-    }];
+    NSDictionary *params = @{@"uid":[infoUrl valueForKey:@"object"][@"uid"],@"access_token":[infoUrl valueForKey:@"object"][@"access_token"]};
+    [self.navigationController popViewControllerAnimated:NO];
+    UserInfoManager.isLogin = YES;
+//    WBHttpRequest * asiRequest = [WBHttpRequest requestWithURL:@"https://api.weibo.com/2/users/show.json" httpMethod:@"GET" params:params delegate:self withTag:@"getUserInfo"];
 }
+
+//请求失败回调方法
+- (void)request:(WBHttpRequest *)request didFailWithError:(NSError *)error
+{
+        NSLog(@"%@",error);
+}
+
+//请求成功回调方法
+- (void)request:(WBHttpRequest *)request didFinishLoadingWithResult:(NSString *)result
+{
+   NSLog(@"%@",result);
+    NSError *error;
+    NSData  *data = [result dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    if (json == nil)
+    {
+        NSLog(@"json parse failed \r\n");
+        return;
+    }
+    NSString *screenname,*picture;
+    screenname = [json objectForKey:@"screen_name"];
+    picture    = [json objectForKey:@"profile_image_url"];
+    
+    NSLog(@"%@",screenname);
+    NSLog(@"%@",picture);
+}
+
 
 - (void)didReceiveMemoryWarning
 {

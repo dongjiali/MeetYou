@@ -54,14 +54,14 @@
     [navBar addSubview:rightBtn];
     
     
-    UIButton *btnNext=[UIButton buttonWithType:UIButtonTypeCustom];
-    btnNext.layer.borderColor=[[UIColor whiteColor] CGColor];
-    btnNext.layer.borderWidth=2;
-    [btnNext setTitle:@"Next" forState:UIControlStateNormal];
-    [btnNext setFrame:CGRectMake(0, 0, 100, 50)];
-    btnNext.center=self.view.center;
-    [btnNext addTarget:self action:@selector(btnNextClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btnNext];
+//    UIButton *btnNext=[UIButton buttonWithType:UIButtonTypeCustom];
+//    btnNext.layer.borderColor=[[UIColor whiteColor] CGColor];
+//    btnNext.layer.borderWidth=2;
+//    [btnNext setTitle:@"Next" forState:UIControlStateNormal];
+//    [btnNext setFrame:CGRectMake(0, 0, 100, 50)];
+//    btnNext.center=self.view.center;
+//    [btnNext addTarget:self action:@selector(btnNextClick:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btnNext];
 	// Do any additional setup after loading the view.
 }
 

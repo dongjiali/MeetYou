@@ -60,7 +60,6 @@
     
     _userName = [UserStandardDefaults objectForKey:UserName];
     _password = [UserStandardDefaults objectForKey:Password];
-    _isLogin = [UserStandardDefaults boolForKey:IsLogin];
     
     _hasAccountInfoUpdated = YES;
     _hasPersonalInfoUpdated = NO;
@@ -100,10 +99,16 @@
 }
 
 - (BOOL)isLogin {
-    if (_hasAccountInfoUpdated) {
-        return _isLogin;
-    }
+//    if (_hasAccountInfoUpdated) {
+//        return _isLogin;
+//    }
     return [UserStandardDefaults boolForKey:IsLogin];
+}
+
+- (void)setIsLogin:(BOOL)isLogin
+{
+    [UserStandardDefaults setBool:isLogin forKey:IsLogin];
+    [UserStandardDefaults synchronize];
 }
 
 #pragma mark - getter - userPersonalInfo
