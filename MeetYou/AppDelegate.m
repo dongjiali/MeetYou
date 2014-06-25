@@ -10,10 +10,10 @@
 #import "SliderViewController.h"
 #import "LeftViewController.h"
 #import "RightViewController.h"
-#import "MainViewController.h"
+#import "RegisterViewController.h"
 
 @interface AppDelegate()
-
+@property (nonatomic,strong)RegisterViewController *registerViewControlle;
 @end
 
 @implementation AppDelegate
@@ -28,7 +28,7 @@
     [WeiboSDK registerApp:kSinaAppKey];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    [SliderViewController sharedSliderController].mainVCClassName = @"MainViewController";
+    [SliderViewController sharedSliderController].mainVCClassName = @"CommendNavigationController";
     
     [SliderViewController sharedSliderController].LeftVC=[[LeftViewController alloc] init];
     [SliderViewController sharedSliderController].RightVC=[[RightViewController alloc] init];
@@ -39,7 +39,21 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[SliderViewController sharedSliderController]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [self setLoginViewController];
     return YES;
+}
+
+- (void)setLoginViewController
+{
+    if (!UserInfoManager.isLogin) {
+        if (!self.registerViewControlle) {
+            if (!_registerViewControlle.view) {
+                _registerViewControlle = [[RegisterViewController alloc]init];
+            }
+        }
+        [self.window addSubview:_registerViewControlle.view];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -188,9 +202,10 @@
         NSString *userid = [(WBAuthorizeResponse *)response userID];
         NSString *weiboToken = [(WBAuthorizeResponse *)response accessToken];
         if (userid && weiboToken) {
-        NSDictionary *dictionary = @{@"uid":userid,@"access_token":weiboToken};
+            NSDictionary *dictionary = @{@"uid":userid,@"access_token":weiboToken};
 //        NSString *userInfoUrl = [NSString stringWithFormat:@"https://api.weibo.com/2/users/show.json?uid=%@&access_token=%@",userid,weiboToken];//
-        [[NSNotificationCenter defaultCenter] postNotificationName:GetWebInfoData object:dictionary];
+        
+            [[NSNotificationCenter defaultCenter] postNotificationName:GetWebInfoData object:dictionary];
         }
     }
 }

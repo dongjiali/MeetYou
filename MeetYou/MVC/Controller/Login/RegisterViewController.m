@@ -50,6 +50,8 @@
     NSDictionary *params = @{@"uid":[infoUrl valueForKey:@"object"][@"uid"],@"access_token":[infoUrl valueForKey:@"object"][@"access_token"]};
     [self.navigationController popViewControllerAnimated:NO];
     UserInfoManager.isLogin = YES;
+    [self.view removeFromSuperview];
+    self.view = nil;
 //    WBHttpRequest * asiRequest = [WBHttpRequest requestWithURL:@"https://api.weibo.com/2/users/show.json" httpMethod:@"GET" params:params delegate:self withTag:@"getUserInfo"];
 }
 

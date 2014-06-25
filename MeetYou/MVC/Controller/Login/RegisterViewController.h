@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RegisterViewController : UIViewController
-
+- (void)pushSeting:(id)infoUrl;
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "UserInfoViewController.h"
-#import "RegisterViewController.h"
 #import "MTPhotoWall.h"
 #import "UserInfoTableViewCell.h"
 #import  "VPViewController.h"
@@ -32,15 +31,6 @@
         // Custom initialization
     }
     return self;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:YES];
-    if (!UserInfoManager.isLogin) {
-        RegisterViewController *registerViewControlle = [[RegisterViewController alloc]init];
-        [self.navigationController pushViewController:registerViewControlle animated:NO];
-    }
 }
 
 - (void)viewDidLoad

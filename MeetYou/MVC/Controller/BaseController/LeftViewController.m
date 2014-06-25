@@ -52,6 +52,7 @@
     _userNameLabel.text = @"橘子";
     [_userInfoHeaderView addSubview:_userNameLabel];
     self.tableView.tableHeaderView = _userInfoHeaderView;
+    [self loadPortrait];
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,12 +77,12 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
-        case 0:
-            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"MainViewController"];
-            break;
-//        case 1:
-//            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"CommendNavigationController"];
+//        case 0:
+//            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"MainViewController"];
 //            break;
+        case 0:
+            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"CommendNavigationController"];
+            break;
         case 1:
             [[SliderViewController sharedSliderController] showContentControllerWithModel:@"ActivitiesNavigationController"];
             break;
