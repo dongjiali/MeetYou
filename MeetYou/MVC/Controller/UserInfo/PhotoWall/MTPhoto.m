@@ -73,6 +73,11 @@
     [self.viewPhoto setImageWithURL:[NSURL URLWithString:photoUrl] placeholderImage:nil];
 }
 
+- (void)setPhotoImage:(UIImage *)image
+{
+    self.viewPhoto.image = image;
+}
+
 - (void)moveToPosition:(CGPoint)point
 {
     if (self.type == PhotoTypePhoto) {

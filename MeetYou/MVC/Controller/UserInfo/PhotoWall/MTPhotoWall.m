@@ -69,7 +69,8 @@
         CGFloat originy = [[dictionaryTemp objectForKey:kImagePositiony] floatValue];
         MTPhoto *photoTemp = [[MTPhoto alloc] initWithOrigin:CGPointMake(originx, originy)];
         photoTemp.delegate = self;
-        [photoTemp setPhotoUrl:[photos objectAtIndex:i]];
+//        [photoTemp setPhotoUrl:[photos objectAtIndex:i]];
+        [photoTemp setPhotoImage:[photos objectAtIndex:i]];
         [self addSubview:photoTemp];
         [self.arrayPhotos addObject:photoTemp];
     }
@@ -114,7 +115,7 @@
     [self reloadPhotos:NO];
 }
 
-- (void)addPhoto:(NSString*)string
+- (void)addPhoto:(UIImage *)string
 {
     NSUInteger index = [self.arrayPhotos count] - 1;
     NSDictionary *dictionaryTemp = [self.arrayPositions objectAtIndex:index];
@@ -123,12 +124,29 @@
     
     MTPhoto *photoTemp = [[MTPhoto alloc] initWithOrigin:CGPointMake(originx, originy)];
     photoTemp.delegate = self;
-    [photoTemp setPhotoUrl:string];
+    [photoTemp setPhotoImage:string];
     
     [self.arrayPhotos insertObject:photoTemp atIndex:index];
     [self addSubview:photoTemp];
     [self reloadPhotos:YES];
 }
+
+
+//- (void)addPhoto:(NSString*)string
+//{
+//    NSUInteger index = [self.arrayPhotos count] - 1;
+//    NSDictionary *dictionaryTemp = [self.arrayPositions objectAtIndex:index];
+//    CGFloat originx = [[dictionaryTemp objectForKey:kImagePositionx] floatValue];
+//    CGFloat originy = [[dictionaryTemp objectForKey:kImagePositiony] floatValue];
+//    
+//    MTPhoto *photoTemp = [[MTPhoto alloc] initWithOrigin:CGPointMake(originx, originy)];
+//    photoTemp.delegate = self;
+//    [photoTemp setPhotoUrl:string];
+//    
+//    [self.arrayPhotos insertObject:photoTemp atIndex:index];
+//    [self addSubview:photoTemp];
+//    [self reloadPhotos:YES];
+//}
 
 - (void)deletePhotoByIndex:(NSUInteger)index
 {

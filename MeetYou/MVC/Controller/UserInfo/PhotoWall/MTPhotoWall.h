@@ -24,6 +24,6 @@
 
 - (void)setPhotos:(NSArray*)photos;
 - (void)setEditModel:(BOOL)canEdit;
-- (void)addPhoto:(NSString*)string;
+- (void)addPhoto:(UIImage*)string;
 - (void)deletePhotoByIndex:(NSUInteger)index;
 @end

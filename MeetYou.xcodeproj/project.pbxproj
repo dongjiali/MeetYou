@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9AA47C75A2BF410DAA621961 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C93A32F50F4B66A32C70EE /* libPods.a */; };
+		CD0CF8AA196436D7007BEB72 /* LeftViewControllerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF8A8196436D7007BEB72 /* LeftViewControllerTableViewCell.m */; };
+		CD0CF8AB196436D7007BEB72 /* LeftViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0CF8A9196436D7007BEB72 /* LeftViewControllerTableViewCell.xib */; };
+		CD37F80D195D1D9900DB867C /* UserLogoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD37F80C195D1D9900DB867C /* UserLogoutView.m */; };
+		CD37F80F195D1DB000DB867C /* UserLogoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD37F80E195D1DB000DB867C /* UserLogoutView.xib */; };
 		CD3951281931B92600E4CEA5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3951271931B92600E4CEA5 /* CFNetwork.framework */; };
 		CD39512C1931D7DB00E4CEA5 /* MTPhotoWall.m in Sources */ = {isa = PBXBuildFile; fileRef = CD39512B1931D7DB00E4CEA5 /* MTPhotoWall.m */; };
 		CD3951321931DF3600E4CEA5 /* MTPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3951311931DF3600E4CEA5 /* MTPhoto.m */; };
@@ -83,6 +87,9 @@
 		CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB606219571DE0004E244B /* UserInfoTableViewCell.xib */; };
 		CDCB606A19573980004E244B /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB606719573980004E244B /* VPImageCropperViewController.m */; };
 		CDCB606B19573980004E244B /* VPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB606919573980004E244B /* VPViewController.m */; };
+		CDF99734196837E000EBBBFE /* CommendLikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF99732196837E000EBBBFE /* CommendLikeViewController.m */; };
+		CDF99735196837E000EBBBFE /* CommendLikeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF99733196837E000EBBBFE /* CommendLikeViewController.xib */; };
+		CDF9973719683A4000EBBBFE /* 红色按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF9973619683A4000EBBBFE /* 红色按钮@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +105,12 @@
 /* Begin PBXFileReference section */
 		58D9484BD33D4400B84A55FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C1C93A32F50F4B66A32C70EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD0CF8A7196436D7007BEB72 /* LeftViewControllerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewControllerTableViewCell.h; sourceTree = "<group>"; };
+		CD0CF8A8196436D7007BEB72 /* LeftViewControllerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewControllerTableViewCell.m; sourceTree = "<group>"; };
+		CD0CF8A9196436D7007BEB72 /* LeftViewControllerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewControllerTableViewCell.xib; sourceTree = "<group>"; };
+		CD37F80B195D1D9900DB867C /* UserLogoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLogoutView.h; sourceTree = "<group>"; };
+		CD37F80C195D1D9900DB867C /* UserLogoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLogoutView.m; sourceTree = "<group>"; };
+		CD37F80E195D1DB000DB867C /* UserLogoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLogoutView.xib; sourceTree = "<group>"; };
 		CD3951271931B92600E4CEA5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CD39512A1931D7DB00E4CEA5 /* MTPhotoWall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPhotoWall.h; sourceTree = "<group>"; };
 		CD39512B1931D7DB00E4CEA5 /* MTPhotoWall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPhotoWall.m; sourceTree = "<group>"; };
@@ -212,6 +225,10 @@
 		CDCB606719573980004E244B /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
 		CDCB606819573980004E244B /* VPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPViewController.h; sourceTree = "<group>"; };
 		CDCB606919573980004E244B /* VPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPViewController.m; sourceTree = "<group>"; };
+		CDF99731196837E000EBBBFE /* CommendLikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendLikeViewController.h; sourceTree = "<group>"; };
+		CDF99732196837E000EBBBFE /* CommendLikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendLikeViewController.m; sourceTree = "<group>"; };
+		CDF99733196837E000EBBBFE /* CommendLikeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommendLikeViewController.xib; sourceTree = "<group>"; };
+		CDF9973619683A4000EBBBFE /* 红色按钮@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红色按钮@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +261,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD0CF8A6196436A5007BEB72 /* LeftView */ = {
+			isa = PBXGroup;
+			children = (
+				CD0CF8A7196436D7007BEB72 /* LeftViewControllerTableViewCell.h */,
+				CD0CF8A8196436D7007BEB72 /* LeftViewControllerTableViewCell.m */,
+				CD0CF8A9196436D7007BEB72 /* LeftViewControllerTableViewCell.xib */,
+			);
+			name = LeftView;
+			sourceTree = "<group>";
+		};
 		CD3951291931D64400E4CEA5 /* PhotoWall */ = {
 			isa = PBXGroup;
 			children = (
@@ -473,6 +500,7 @@
 		CDBA9BDC19308821006F292F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CDF9973619683A4000EBBBFE /* 红色按钮@2x.png */,
 				CDBA9BDD19308844006F292F /* btn_login_focus@2x.png */,
 				CDBA9BDE19308844006F292F /* btn_login@2x.png */,
 				CDBA9BDF19308844006F292F /* select_pic@2x.png */,
@@ -538,6 +566,7 @@
 		CDBA9C3B19309431006F292F /* Commend */ = {
 			isa = PBXGroup;
 			children = (
+				CDF99730196836B400EBBBFE /* 互动配对 */,
 				CDBA9C3C1930946A006F292F /* CommendNavigationController.h */,
 				CDBA9C3D1930946A006F292F /* CommendNavigationController.m */,
 				CDBA9C3E1930946A006F292F /* CommendNavigationController.xib */,
@@ -613,9 +642,8 @@
 		CDCB605F19571DBD004E244B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CDCB606019571DE0004E244B /* UserInfoTableViewCell.h */,
-				CDCB606119571DE0004E244B /* UserInfoTableViewCell.m */,
-				CDCB606219571DE0004E244B /* UserInfoTableViewCell.xib */,
+				CD0CF8A6196436A5007BEB72 /* LeftView */,
+				CDDA479C195D1D0B00EE1EB6 /* User */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -629,6 +657,29 @@
 				CDCB606919573980004E244B /* VPViewController.m */,
 			);
 			path = HeadView;
+			sourceTree = "<group>";
+		};
+		CDDA479C195D1D0B00EE1EB6 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB606019571DE0004E244B /* UserInfoTableViewCell.h */,
+				CDCB606119571DE0004E244B /* UserInfoTableViewCell.m */,
+				CDCB606219571DE0004E244B /* UserInfoTableViewCell.xib */,
+				CD37F80B195D1D9900DB867C /* UserLogoutView.h */,
+				CD37F80C195D1D9900DB867C /* UserLogoutView.m */,
+				CD37F80E195D1DB000DB867C /* UserLogoutView.xib */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		CDF99730196836B400EBBBFE /* 互动配对 */ = {
+			isa = PBXGroup;
+			children = (
+				CDF99731196837E000EBBBFE /* CommendLikeViewController.h */,
+				CDF99732196837E000EBBBFE /* CommendLikeViewController.m */,
+				CDF99733196837E000EBBBFE /* CommendLikeViewController.xib */,
+			);
+			name = "互动配对";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -717,18 +768,22 @@
 				CDBA9C35193093F8006F292F /* ActivitiesViewController.xib in Resources */,
 				CDBA9C3A1930940C006F292F /* ActivitiesNavigationController.xib in Resources */,
 				CDBA9BE019308844006F292F /* btn_login_focus@2x.png in Resources */,
+				CDF99735196837E000EBBBFE /* CommendLikeViewController.xib in Resources */,
 				CDBA9C0119308D12006F292F /* RightViewController.xib in Resources */,
 				CDBA9C1F1930927C006F292F /* SettingViewController.xib in Resources */,
+				CD37F80F195D1DB000DB867C /* UserLogoutView.xib in Resources */,
 				CDBA9BC91930849E006F292F /* SliderViewController.xib in Resources */,
 				CDBA9C0E19308D29006F292F /* UserInfoNavigationController.xib in Resources */,
 				CD3951381931FBE600E4CEA5 /* ImageCropperViewController.xib in Resources */,
 				CDBA9C24193092B4006F292F /* SettingNavigationController.xib in Resources */,
 				CDBA9BE219308844006F292F /* select_pic@2x.png in Resources */,
+				CD0CF8AB196436D7007BEB72 /* LeftViewControllerTableViewCell.xib in Resources */,
 				CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */,
 				CDBA9C0619308D1F006F292F /* RegisterViewController.xib in Resources */,
 				CDBA9C2F193093B6006F292F /* MessageViewController.xib in Resources */,
 				CDBA9C451930947C006F292F /* CommendViewController.xib in Resources */,
 				CDBA9C2A193093A5006F292F /* MessageNavigationController.xib in Resources */,
+				CDF9973719683A4000EBBBFE /* 红色按钮@2x.png in Resources */,
 				CDCB60561957184C004E244B /* MJRefresh.bundle in Resources */,
 				CDBA9BD719308694006F292F /* WeiboSDK.bundle in Resources */,
 				CDBA9C1019308D29006F292F /* UserInfoViewController.xib in Resources */,
@@ -797,6 +852,7 @@
 				CDBA9B781930835D006F292F /* AppDelegate.m in Sources */,
 				CD3951321931DF3600E4CEA5 /* MTPhoto.m in Sources */,
 				CDCB603F1957120C004E244B /* UserInfoDataManager.m in Sources */,
+				CD0CF8AA196436D7007BEB72 /* LeftViewControllerTableViewCell.m in Sources */,
 				CDCB606B19573980004E244B /* VPViewController.m in Sources */,
 				CDBA9BFC19308D12006F292F /* MainViewController.m in Sources */,
 				CDCB60571957184C004E244B /* MJRefreshBaseView.m in Sources */,
@@ -813,12 +869,14 @@
 				CDBA9C0519308D1F006F292F /* RegisterViewController.m in Sources */,
 				CDCB60581957184C004E244B /* MJRefreshConst.m in Sources */,
 				CDA1B53D1931A18D0015D8D6 /* MTRequestSerializer.m in Sources */,
+				CD37F80D195D1D9900DB867C /* UserLogoutView.m in Sources */,
 				CDBA9BFE19308D12006F292F /* NavigationController.m in Sources */,
 				CDBA9BC81930849E006F292F /* SliderViewController.m in Sources */,
 				CDBA9BC61930849E006F292F /* SliderContentViewController.m in Sources */,
 				CDBA9C34193093F8006F292F /* ActivitiesViewController.m in Sources */,
 				CD3951371931FBE600E4CEA5 /* ImageCropperViewController.m in Sources */,
 				CDA1B53C1931A18D0015D8D6 /* MTNetWork.m in Sources */,
+				CDF99734196837E000EBBBFE /* CommendLikeViewController.m in Sources */,
 				CDCB605E19571963004E244B /* UIView+Boundaries.m in Sources */,
 				CDCB60431957140D004E244B /* StringArrayDictionaryCategories.m in Sources */,
 			);
@@ -878,7 +936,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -916,7 +975,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -938,6 +998,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -960,6 +1022,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Weifeng Hou  (29ZM7QR36G)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",

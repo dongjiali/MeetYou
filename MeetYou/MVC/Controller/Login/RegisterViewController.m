@@ -10,6 +10,7 @@
 
 @interface RegisterViewController ()<WBHttpRequestDelegate>
 @property (nonatomic,strong) MTNetWork *netWork;
+@property (nonatomic,weak) IBOutlet UIButton *loginButton;
 @end
 
 @implementation RegisterViewController
@@ -29,13 +30,20 @@
     
     self.netWork = [[MTNetWork alloc]init];
     // Do any additional setup after loading the view from its nib.
+    [self.loginButton addTarget:self action:@selector(registerUser:) forControlEvents:UIControlEventTouchDown];
+    [self.loginButton addTarget:self action:@selector(eventTouchDragInside:) forControlEvents:UIControlEventTouchDragOutside];
+    [self.loginButton addTarget:self action:@selector(registerUserOutside:) forControlEvents:UIControlEventTouchUpInside];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushSeting:) name:GetWebInfoData object:nil];
     self.title = @"登陆";
     [self.navigationItem setHidesBackButton:YES];
 }
 
-- (IBAction)registerUser:(id)sender {
-    [((UIButton *)sender) setImage:[UIImage imageNamed:@"btn_login_focus"] forState:UIControlStateSelected];
+- (void)registerUser:(id)sender {
+    [((UIButton *)sender) setImage:[UIImage imageNamed:@"btn_login_focus"] forState:UIControlStateNormal];
+}
+
+- (void)registerUserOutside:(id)sender {
+    [((UIButton *)sender) setImage:[UIImage imageNamed:@"btn_login"] forState:UIControlStateNormal];
     WBAuthorizeRequest *request = [WBAuthorizeRequest request];
     request.redirectURI = kSinaRedirectURI;
     request.scope = @"all";
@@ -43,6 +51,12 @@
     [WeiboSDK enableDebugMode:YES];
     [WeiboSDK sendRequest:request];
 }
+
+- (void)eventTouchDragInside:(id)sender {
+    [((UIButton *)sender) setImage:[UIImage imageNamed:@"btn_login"] forState:UIControlStateNormal];
+}
+
+
 
 - (void)pushSeting:(id)infoUrl
 {

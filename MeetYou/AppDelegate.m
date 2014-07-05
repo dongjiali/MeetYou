@@ -41,6 +41,7 @@
     [self.window makeKeyAndVisible];
     
     [self setLoginViewController];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setLoginViewController) name:SetLoginViewController object:nil];
     return YES;
 }
 

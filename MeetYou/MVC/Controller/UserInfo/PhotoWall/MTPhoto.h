@@ -31,6 +31,7 @@ typedef NS_ENUM(NSInteger, PhotoType) {
 
 - (void)setPhotoType:(PhotoType)type;
 - (PhotoType)getPhotoType;
+- (void)setPhotoImage:(UIImage *)image;
 - (void)setPhotoUrl:(NSString*)photoUrl;
 - (void)moveToPosition:(CGPoint)point;
 - (void)setEditModel:(BOOL)edit;

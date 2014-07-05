@@ -38,6 +38,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = ColorRGBA(39, 39, 39);
+    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 
     NSString *userName = _userInfo;
@@ -45,11 +47,15 @@
 	// Do any additional setup after loading the view.
     
     self.userInfoHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 220)];
-    _userInfoHeaderView.backgroundColor = [UIColor greenColor];
+    _userInfoHeaderView.backgroundColor = ColorRGBA(39, 39, 39);
     [_userInfoHeaderView addSubview:[self portraitImageView:_userInfoHeaderView]];
+    UIView *lineView = [[UIView alloc]initWithFrame:CGRectMake(0, _userInfoHeaderView.frame.size.height-1, _userInfoHeaderView.frame.size.width, 1)];
+    lineView.backgroundColor = [UIColor grayColor];
+    [_userInfoHeaderView addSubview:lineView];
     
     self.userNameLabel = [[UILabel alloc]initWithFrame:CGRectMake(_portraitImageView.center.x - 20, _portraitImageView.frame.size.height + 60, 200, 30)];
     _userNameLabel.text = @"橘子";
+    _userNameLabel.textColor = [UIColor whiteColor];
     [_userInfoHeaderView addSubview:_userNameLabel];
     self.tableView.tableHeaderView = _userInfoHeaderView;
     [self loadPortrait];
@@ -66,8 +72,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     cell.backgroundColor=[UIColor clearColor];
+    cell.contentView.backgroundColor  =[UIColor clearColor];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     [cell.textLabel setText:_leftTableTitle[indexPath.row]];
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 
