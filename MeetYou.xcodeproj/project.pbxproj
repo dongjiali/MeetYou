@@ -10,6 +10,11 @@
 		9AA47C75A2BF410DAA621961 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C93A32F50F4B66A32C70EE /* libPods.a */; };
 		CD0CF8AA196436D7007BEB72 /* LeftViewControllerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF8A8196436D7007BEB72 /* LeftViewControllerTableViewCell.m */; };
 		CD0CF8AB196436D7007BEB72 /* LeftViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0CF8A9196436D7007BEB72 /* LeftViewControllerTableViewCell.xib */; };
+		CD3394CD19729DA20042377B /* CommendTermFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3394CB19729DA20042377B /* CommendTermFindViewController.m */; };
+		CD3394CE19729DA20042377B /* CommendTermFindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3394CC19729DA20042377B /* CommendTermFindViewController.xib */; };
+		CD3394D31972A2070042377B /* CommendTermFindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3394D11972A2070042377B /* CommendTermFindCell.m */; };
+		CD3394D41972A2070042377B /* CommendTermFindCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3394D21972A2070042377B /* CommendTermFindCell.xib */; };
+		CD3394D81972A74B0042377B /* CommendTermFindMocel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3394D71972A74B0042377B /* CommendTermFindMocel.m */; };
 		CD37F80D195D1D9900DB867C /* UserLogoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD37F80C195D1D9900DB867C /* UserLogoutView.m */; };
 		CD37F80F195D1DB000DB867C /* UserLogoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD37F80E195D1DB000DB867C /* UserLogoutView.xib */; };
 		CD3951281931B92600E4CEA5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3951271931B92600E4CEA5 /* CFNetwork.framework */; };
@@ -87,6 +92,13 @@
 		CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB606219571DE0004E244B /* UserInfoTableViewCell.xib */; };
 		CDCB606A19573980004E244B /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB606719573980004E244B /* VPImageCropperViewController.m */; };
 		CDCB606B19573980004E244B /* VPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB606919573980004E244B /* VPViewController.m */; };
+		CDE5D4B819729905003FF703 /* HNAPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4AC19729905003FF703 /* HNAPicker.m */; };
+		CDE5D4B919729905003FF703 /* HNAPickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4AE19729905003FF703 /* HNAPickerCollectionView.m */; };
+		CDE5D4BA19729905003FF703 /* HNAPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4B019729905003FF703 /* HNAPickerCollectionViewCell.m */; };
+		CDE5D4BB19729905003FF703 /* HNAPickerCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4B219729905003FF703 /* HNAPickerCollectionViewFlowLayout.m */; };
+		CDE5D4BC19729905003FF703 /* HNAPickerDateSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4B419729905003FF703 /* HNAPickerDateSource.m */; };
+		CDE5D4BD19729905003FF703 /* HNAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4B719729905003FF703 /* HNAPickerView.m */; };
+		CDF29808197295C20010F41C /* MTiToast.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF29807197295C20010F41C /* MTiToast.m */; };
 		CDF99734196837E000EBBBFE /* CommendLikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF99732196837E000EBBBFE /* CommendLikeViewController.m */; };
 		CDF99735196837E000EBBBFE /* CommendLikeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF99733196837E000EBBBFE /* CommendLikeViewController.xib */; };
 		CDF9973719683A4000EBBBFE /* 红色按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF9973619683A4000EBBBFE /* 红色按钮@2x.png */; };
@@ -108,6 +120,14 @@
 		CD0CF8A7196436D7007BEB72 /* LeftViewControllerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewControllerTableViewCell.h; sourceTree = "<group>"; };
 		CD0CF8A8196436D7007BEB72 /* LeftViewControllerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewControllerTableViewCell.m; sourceTree = "<group>"; };
 		CD0CF8A9196436D7007BEB72 /* LeftViewControllerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewControllerTableViewCell.xib; sourceTree = "<group>"; };
+		CD3394CA19729DA20042377B /* CommendTermFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendTermFindViewController.h; sourceTree = "<group>"; };
+		CD3394CB19729DA20042377B /* CommendTermFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendTermFindViewController.m; sourceTree = "<group>"; };
+		CD3394CC19729DA20042377B /* CommendTermFindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommendTermFindViewController.xib; sourceTree = "<group>"; };
+		CD3394D01972A2070042377B /* CommendTermFindCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendTermFindCell.h; sourceTree = "<group>"; };
+		CD3394D11972A2070042377B /* CommendTermFindCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendTermFindCell.m; sourceTree = "<group>"; };
+		CD3394D21972A2070042377B /* CommendTermFindCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommendTermFindCell.xib; sourceTree = "<group>"; };
+		CD3394D61972A74B0042377B /* CommendTermFindMocel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendTermFindMocel.h; sourceTree = "<group>"; };
+		CD3394D71972A74B0042377B /* CommendTermFindMocel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendTermFindMocel.m; sourceTree = "<group>"; };
 		CD37F80B195D1D9900DB867C /* UserLogoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLogoutView.h; sourceTree = "<group>"; };
 		CD37F80C195D1D9900DB867C /* UserLogoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLogoutView.m; sourceTree = "<group>"; };
 		CD37F80E195D1DB000DB867C /* UserLogoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserLogoutView.xib; sourceTree = "<group>"; };
@@ -225,6 +245,21 @@
 		CDCB606719573980004E244B /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
 		CDCB606819573980004E244B /* VPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPViewController.h; sourceTree = "<group>"; };
 		CDCB606919573980004E244B /* VPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPViewController.m; sourceTree = "<group>"; };
+		CDE5D4AB19729905003FF703 /* HNAPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPicker.h; sourceTree = "<group>"; };
+		CDE5D4AC19729905003FF703 /* HNAPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAPicker.m; sourceTree = "<group>"; };
+		CDE5D4AD19729905003FF703 /* HNAPickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerCollectionView.h; sourceTree = "<group>"; };
+		CDE5D4AE19729905003FF703 /* HNAPickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAPickerCollectionView.m; sourceTree = "<group>"; };
+		CDE5D4AF19729905003FF703 /* HNAPickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerCollectionViewCell.h; sourceTree = "<group>"; };
+		CDE5D4B019729905003FF703 /* HNAPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAPickerCollectionViewCell.m; sourceTree = "<group>"; };
+		CDE5D4B119729905003FF703 /* HNAPickerCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		CDE5D4B219729905003FF703 /* HNAPickerCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAPickerCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		CDE5D4B319729905003FF703 /* HNAPickerDateSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerDateSource.h; sourceTree = "<group>"; };
+		CDE5D4B419729905003FF703 /* HNAPickerDateSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAPickerDateSource.m; sourceTree = "<group>"; };
+		CDE5D4B519729905003FF703 /* HNAPickerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerMacro.h; sourceTree = "<group>"; };
+		CDE5D4B619729905003FF703 /* HNAPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerView.h; sourceTree = "<group>"; };
+		CDE5D4B719729905003FF703 /* HNAPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAPickerView.m; sourceTree = "<group>"; };
+		CDF29806197295C20010F41C /* MTiToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTiToast.h; sourceTree = "<group>"; };
+		CDF29807197295C20010F41C /* MTiToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTiToast.m; sourceTree = "<group>"; };
 		CDF99731196837E000EBBBFE /* CommendLikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendLikeViewController.h; sourceTree = "<group>"; };
 		CDF99732196837E000EBBBFE /* CommendLikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendLikeViewController.m; sourceTree = "<group>"; };
 		CDF99733196837E000EBBBFE /* CommendLikeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommendLikeViewController.xib; sourceTree = "<group>"; };
@@ -271,6 +306,25 @@
 			name = LeftView;
 			sourceTree = "<group>";
 		};
+		CD3394CF1972A1D80042377B /* CommendTermFindCell */ = {
+			isa = PBXGroup;
+			children = (
+				CD3394D01972A2070042377B /* CommendTermFindCell.h */,
+				CD3394D11972A2070042377B /* CommendTermFindCell.m */,
+				CD3394D21972A2070042377B /* CommendTermFindCell.xib */,
+			);
+			name = CommendTermFindCell;
+			sourceTree = "<group>";
+		};
+		CD3394D51972A70E0042377B /* CommendModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD3394D61972A74B0042377B /* CommendTermFindMocel.h */,
+				CD3394D71972A74B0042377B /* CommendTermFindMocel.m */,
+			);
+			path = CommendModel;
+			sourceTree = "<group>";
+		};
 		CD3951291931D64400E4CEA5 /* PhotoWall */ = {
 			isa = PBXGroup;
 			children = (
@@ -296,6 +350,7 @@
 		CD71394D1952F14E00D84CC7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD3394D51972A70E0042377B /* CommendModel */,
 				CDCB603C195711D5004E244B /* UserDateModel */,
 				CDCB603B195711C0004E244B /* LoginModel */,
 			);
@@ -461,6 +516,8 @@
 		CDBA9BD019308653006F292F /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				CDE5D4AA19729905003FF703 /* PickerView */,
+				CDF29802197295A40010F41C /* AlertView */,
 				CDCB605B1957195C004E244B /* Utilities */,
 				CDCB604B1957184C004E244B /* MJRefresh */,
 				CDCB60401957137A004E244B /* String */,
@@ -566,6 +623,7 @@
 		CDBA9C3B19309431006F292F /* Commend */ = {
 			isa = PBXGroup;
 			children = (
+				CDE5D4BE19729CA8003FF703 /* 推荐筛选 */,
 				CDF99730196836B400EBBBFE /* 互动配对 */,
 				CDBA9C3C1930946A006F292F /* CommendNavigationController.h */,
 				CDBA9C3D1930946A006F292F /* CommendNavigationController.m */,
@@ -642,6 +700,7 @@
 		CDCB605F19571DBD004E244B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CD3394CF1972A1D80042377B /* CommendTermFindCell */,
 				CD0CF8A6196436A5007BEB72 /* LeftView */,
 				CDDA479C195D1D0B00EE1EB6 /* User */,
 			);
@@ -670,6 +729,45 @@
 				CD37F80E195D1DB000DB867C /* UserLogoutView.xib */,
 			);
 			name = User;
+			sourceTree = "<group>";
+		};
+		CDE5D4AA19729905003FF703 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				CDE5D4AB19729905003FF703 /* HNAPicker.h */,
+				CDE5D4AC19729905003FF703 /* HNAPicker.m */,
+				CDE5D4AD19729905003FF703 /* HNAPickerCollectionView.h */,
+				CDE5D4AE19729905003FF703 /* HNAPickerCollectionView.m */,
+				CDE5D4AF19729905003FF703 /* HNAPickerCollectionViewCell.h */,
+				CDE5D4B019729905003FF703 /* HNAPickerCollectionViewCell.m */,
+				CDE5D4B119729905003FF703 /* HNAPickerCollectionViewFlowLayout.h */,
+				CDE5D4B219729905003FF703 /* HNAPickerCollectionViewFlowLayout.m */,
+				CDE5D4B319729905003FF703 /* HNAPickerDateSource.h */,
+				CDE5D4B419729905003FF703 /* HNAPickerDateSource.m */,
+				CDE5D4B519729905003FF703 /* HNAPickerMacro.h */,
+				CDE5D4B619729905003FF703 /* HNAPickerView.h */,
+				CDE5D4B719729905003FF703 /* HNAPickerView.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		CDE5D4BE19729CA8003FF703 /* 推荐筛选 */ = {
+			isa = PBXGroup;
+			children = (
+				CD3394CA19729DA20042377B /* CommendTermFindViewController.h */,
+				CD3394CB19729DA20042377B /* CommendTermFindViewController.m */,
+				CD3394CC19729DA20042377B /* CommendTermFindViewController.xib */,
+			);
+			name = "推荐筛选";
+			sourceTree = "<group>";
+		};
+		CDF29802197295A40010F41C /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				CDF29806197295C20010F41C /* MTiToast.h */,
+				CDF29807197295C20010F41C /* MTiToast.m */,
+			);
+			path = AlertView;
 			sourceTree = "<group>";
 		};
 		CDF99730196836B400EBBBFE /* 互动配对 */ = {
@@ -766,6 +864,7 @@
 				CD7139531953247B00D84CC7 /* addPhoto@2x.png in Resources */,
 				CDBA9B721930835D006F292F /* InfoPlist.strings in Resources */,
 				CDBA9C35193093F8006F292F /* ActivitiesViewController.xib in Resources */,
+				CD3394CE19729DA20042377B /* CommendTermFindViewController.xib in Resources */,
 				CDBA9C3A1930940C006F292F /* ActivitiesNavigationController.xib in Resources */,
 				CDBA9BE019308844006F292F /* btn_login_focus@2x.png in Resources */,
 				CDF99735196837E000EBBBFE /* CommendLikeViewController.xib in Resources */,
@@ -786,6 +885,7 @@
 				CDF9973719683A4000EBBBFE /* 红色按钮@2x.png in Resources */,
 				CDCB60561957184C004E244B /* MJRefresh.bundle in Resources */,
 				CDBA9BD719308694006F292F /* WeiboSDK.bundle in Resources */,
+				CD3394D41972A2070042377B /* CommendTermFindCell.xib in Resources */,
 				CDBA9C1019308D29006F292F /* UserInfoViewController.xib in Resources */,
 				CDBA9BE119308844006F292F /* btn_login@2x.png in Resources */,
 				CDBA9B7D1930835D006F292F /* Images.xcassets in Resources */,
@@ -843,6 +943,7 @@
 			files = (
 				CDCB606A19573980004E244B /* VPImageCropperViewController.m in Sources */,
 				CD39512C1931D7DB00E4CEA5 /* MTPhotoWall.m in Sources */,
+				CDF29808197295C20010F41C /* MTiToast.m in Sources */,
 				CDBA9BFA19308D12006F292F /* LeftViewController.m in Sources */,
 				CDBA9C0D19308D29006F292F /* UserInfoNavigationController.m in Sources */,
 				CDBA9C3F1930946A006F292F /* CommendNavigationController.m in Sources */,
@@ -853,30 +954,39 @@
 				CD3951321931DF3600E4CEA5 /* MTPhoto.m in Sources */,
 				CDCB603F1957120C004E244B /* UserInfoDataManager.m in Sources */,
 				CD0CF8AA196436D7007BEB72 /* LeftViewControllerTableViewCell.m in Sources */,
+				CDE5D4BD19729905003FF703 /* HNAPickerView.m in Sources */,
 				CDCB606B19573980004E244B /* VPViewController.m in Sources */,
 				CDBA9BFC19308D12006F292F /* MainViewController.m in Sources */,
 				CDCB60571957184C004E244B /* MJRefreshBaseView.m in Sources */,
+				CDE5D4BC19729905003FF703 /* HNAPickerDateSource.m in Sources */,
 				CDBA9B741930835D006F292F /* main.m in Sources */,
 				CDCB60591957184C004E244B /* MJRefreshFooterView.m in Sources */,
 				CDBA9C391930940C006F292F /* ActivitiesNavigationController.m in Sources */,
+				CDE5D4B819729905003FF703 /* HNAPicker.m in Sources */,
 				CDBA9C2E193093B6006F292F /* MessageViewController.m in Sources */,
+				CD3394CD19729DA20042377B /* CommendTermFindViewController.m in Sources */,
 				CDBA9C29193093A5006F292F /* MessageNavigationController.m in Sources */,
 				CDBA9C0F19308D29006F292F /* UserInfoViewController.m in Sources */,
 				CDBA9C0019308D12006F292F /* RightViewController.m in Sources */,
 				CDBA9C23193092B4006F292F /* SettingNavigationController.m in Sources */,
+				CDE5D4B919729905003FF703 /* HNAPickerCollectionView.m in Sources */,
 				CDCB606319571DE0004E244B /* UserInfoTableViewCell.m in Sources */,
+				CDE5D4BB19729905003FF703 /* HNAPickerCollectionViewFlowLayout.m in Sources */,
 				CDBA9B7B1930835D006F292F /* MeetYou.xcdatamodeld in Sources */,
 				CDBA9C0519308D1F006F292F /* RegisterViewController.m in Sources */,
 				CDCB60581957184C004E244B /* MJRefreshConst.m in Sources */,
 				CDA1B53D1931A18D0015D8D6 /* MTRequestSerializer.m in Sources */,
 				CD37F80D195D1D9900DB867C /* UserLogoutView.m in Sources */,
+				CDE5D4BA19729905003FF703 /* HNAPickerCollectionViewCell.m in Sources */,
 				CDBA9BFE19308D12006F292F /* NavigationController.m in Sources */,
 				CDBA9BC81930849E006F292F /* SliderViewController.m in Sources */,
 				CDBA9BC61930849E006F292F /* SliderContentViewController.m in Sources */,
+				CD3394D31972A2070042377B /* CommendTermFindCell.m in Sources */,
 				CDBA9C34193093F8006F292F /* ActivitiesViewController.m in Sources */,
 				CD3951371931FBE600E4CEA5 /* ImageCropperViewController.m in Sources */,
 				CDA1B53C1931A18D0015D8D6 /* MTNetWork.m in Sources */,
 				CDF99734196837E000EBBBFE /* CommendLikeViewController.m in Sources */,
+				CD3394D81972A74B0042377B /* CommendTermFindMocel.m in Sources */,
 				CDCB605E19571963004E244B /* UIView+Boundaries.m in Sources */,
 				CDCB60431957140D004E244B /* StringArrayDictionaryCategories.m in Sources */,
 			);

@@ -8,7 +8,8 @@
 
 #import "CommendViewController.h"
 #import "CommendLikeViewController.h"
-
+#import "UserInfoViewController.h"
+#import "CommendTermFindViewController.h"
 
 @interface CommendViewController ()
 @property (nonatomic,weak)IBOutlet UIButton *dataButton;
@@ -17,7 +18,9 @@
 @property (nonatomic,weak)IBOutlet UIButton *flowersButton;
 
 
-@property (nonatomic,strong) CommendLikeViewController *likeViewController;
+@property (nonatomic,strong) CommendLikeViewController *likeViewController; //喜欢
+@property (nonatomic,strong) UserInfoViewController *userInfoViewController; //个人资料
+@property (nonatomic,strong) CommendTermFindViewController *termFindViewController; //筛选
 @end
 
 @implementation CommendViewController
@@ -35,7 +38,10 @@
 {
     [super viewDidLoad];
     self.title = @"推荐";
+    self.navigationController.navigationBarHidden = YES;
     // Do any additional setup after loading the view from its nib.
+    
+    
 }
 /**
  *  资料
@@ -43,6 +49,10 @@
  *  @param sender
  */
 - (IBAction)clickDataButton:(id)sender {
+    if (!_userInfoViewController) {
+        self.userInfoViewController = [[UserInfoViewController alloc]init];
+    }
+    [self.navigationController pushViewController:_userInfoViewController animated:YES];
 }
 /**
  *  不稀饭
@@ -50,6 +60,7 @@
  *  @param sender
  */
 - (IBAction)clickDisLikeButton:(id)sender {
+        [[[MTiToast makeText:@"你已把某某某添加到黑名单中"] setGravity:iToastGravityCenter] show];
 }
 /**
  *  稀饭
@@ -68,7 +79,30 @@
  *  @param sender
  */
 - (IBAction)sendFlowersButton:(id)sender {
+    [[[MTiToast makeText:@"你已送某某一朵花"] setGravity:iToastGravityCenter] show];
 }
+/**
+ *  返回左边栏
+ *
+ *  @param sender
+ */
+- (IBAction)backHome:(id)sender {
+    [[SliderViewController sharedSliderController] leftItemClick];
+}
+/**
+ *  条件查找 筛选
+ *
+ *  @param sender
+ */
+- (IBAction)termFind:(id)sender {
+    if (!_termFindViewController) {
+        self.termFindViewController = [[CommendTermFindViewController alloc]init];
+    }
+    [self presentViewController:_termFindViewController animated:YES completion:^{
+        
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
