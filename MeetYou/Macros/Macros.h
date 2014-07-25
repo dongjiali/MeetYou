@@ -63,7 +63,7 @@
 
 // Utilities
 #import "UIView+Boundaries.h"
-//#import "UIColor+HXHexColor.h"
+#import "UIColor+HXHexColor.h"
 //#import "HXStringArrayDictionaryCategories.h"
 //#import "HXAdjustKeyboardManager.h"
 //#import "NSString+TimeFormat.h"

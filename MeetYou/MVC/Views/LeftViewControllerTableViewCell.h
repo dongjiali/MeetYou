@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LeftViewControllerTableViewCell : UITableViewCell
-
+@property (weak, nonatomic) IBOutlet UILabel *leftTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *leftImageView;
 @end

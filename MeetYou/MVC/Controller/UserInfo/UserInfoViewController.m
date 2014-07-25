@@ -47,6 +47,12 @@
     self.title = @"个人信息";
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)setMember
 {
     self.infoArray = @[@"头像",@"年龄/星座                  23/水瓶座:",@"身高:                          176cm",@"体重:                          65kg",@"地区:                          北京 海淀",@"个性签名:                  人要靠自己",@"  更多信息",@"学历:                          本科",@"学校:                          北京大学",@"职业:                          程序猿",@"公司:                          牛X公司"];

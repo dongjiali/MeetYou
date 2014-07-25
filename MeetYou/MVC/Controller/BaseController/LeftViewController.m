@@ -12,6 +12,7 @@
 #import "VPImageCropperViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "LeftViewControllerTableViewCell.h"
 #define ORIGINAL_MAX_WIDTH 640.0f
 
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
@@ -21,7 +22,7 @@
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UILabel *userNameLabel;
 
-@property (nonatomic, strong)NSArray *leftTableTitle;
+@property (nonatomic, strong)NSArray *leftTableTitle,*leftTableImage;
 @end
 
 @implementation LeftViewController
@@ -38,16 +39,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = ColorRGBA(39, 39, 39);
+    self.view.backgroundColor = ColorRGB(39, 39, 39);
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-
+    [self.tableView registerClass:[LeftViewControllerTableViewCell class] forCellReuseIdentifier:@"LeftViewControllerTableViewCell"];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    
     NSString *userName = _userInfo;
     self.leftTableTitle = @[@"推荐",@"活动",@"消息",@"设置",];
+    self.leftTableImage = @[@"推荐.png",@"活动.png",@"消息.png",@"设置.png",];
+    
 	// Do any additional setup after loading the view.
     
     self.userInfoHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 220)];
-    _userInfoHeaderView.backgroundColor = ColorRGBA(39, 39, 39);
+    _userInfoHeaderView.backgroundColor = ColorHex(@"#343434");
     [_userInfoHeaderView addSubview:[self portraitImageView:_userInfoHeaderView]];
     UIView *lineView = [[UIView alloc]initWithFrame:CGRectMake(0, _userInfoHeaderView.frame.size.height-1, _userInfoHeaderView.frame.size.width, 1)];
     lineView.backgroundColor = [UIColor grayColor];
@@ -69,13 +74,14 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    LeftViewControllerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LeftViewControllerTableViewCell"];
+    [cell.leftTitle setText:_leftTableTitle[indexPath.row]];
+    [cell.leftImageView setImage:[UIImage imageNamed:_leftTableImage[indexPath.row]]];
     
-    cell.backgroundColor=[UIColor clearColor];
-    cell.contentView.backgroundColor  =[UIColor clearColor];
-    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    [cell.textLabel setText:_leftTableTitle[indexPath.row]];
-    cell.textLabel.textColor = [UIColor whiteColor];
+    UIView *view = [[UIView alloc]initWithFrame:cell.contentView.frame];
+    view.backgroundColor = [UIColor blackColor];
+    [cell setSelectedBackgroundView:view];
+    
     return cell;
 }
 
@@ -83,7 +89,7 @@
     return _leftTableTitle.count;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{    
     switch (indexPath.row) {
 //        case 0:
 //            [[SliderViewController sharedSliderController] showContentControllerWithModel:@"MainViewController"];

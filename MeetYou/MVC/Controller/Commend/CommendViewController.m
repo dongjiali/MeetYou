@@ -38,11 +38,22 @@
 {
     [super viewDidLoad];
     self.title = @"推荐";
-    self.navigationController.navigationBarHidden = YES;
+    
     // Do any additional setup after loading the view from its nib.
-    
-    
+
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    self.navigationController.navigationBarHidden = YES;
+}
+
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:YES];
+//    self.navigationController.navigationBarHidden = NO;
+//}
 /**
  *  资料
  *

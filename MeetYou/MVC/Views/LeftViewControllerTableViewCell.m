@@ -10,6 +10,16 @@
 
 @implementation LeftViewControllerTableViewCell
 
+- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        NSArray *xibArr = [[NSBundle mainBundle] loadNibNamed:@"LeftViewControllerTableViewCell" owner:self options:nil];
+        self = xibArr[0];
+    }
+    return self;
+}
+
 - (void)awakeFromNib
 {
     // Initialization code
