@@ -10,6 +10,7 @@
 #import "CommendLikeViewController.h"
 #import "UserInfoViewController.h"
 #import "CommendTermFindViewController.h"
+#import "MoreCommendViewController.h"
 
 @interface CommendViewController ()
 @property (nonatomic,weak)IBOutlet UIButton *dataButton;
@@ -17,6 +18,10 @@
 @property (nonatomic,weak)IBOutlet UIButton *likeButton;
 @property (nonatomic,weak)IBOutlet UIButton *flowersButton;
 
+@property (nonatomic,weak)IBOutlet UIImageView *backgroundImageView;
+@property (nonatomic,weak)IBOutlet UIImageView *headerImageView;
+@property (nonatomic,weak)IBOutlet UILabel *timeLabel;
+@property (nonatomic,weak)IBOutlet UILabel *nameLabel;
 
 @property (nonatomic,strong) CommendLikeViewController *likeViewController; //喜欢
 @property (nonatomic,strong) UserInfoViewController *userInfoViewController; //个人资料
@@ -37,10 +42,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"推荐";
-    
+    self.title = @" ";
+    //设置头像图片圆角
+    self.headerImageView.layer.cornerRadius = 8;
+    [_dataButton setImage:[UIImage imageNamed:@"资料点击"] forState:UIControlStateHighlighted];
+    [_dislikeButton setImage:[UIImage imageNamed:@"不喜欢点击"] forState:UIControlStateHighlighted];
+    [_likeButton setImage:[UIImage imageNamed:@"喜欢点击"] forState:UIControlStateHighlighted];
+    [_flowersButton setImage:[UIImage imageNamed:@"送花点击"] forState:UIControlStateHighlighted];
     // Do any additional setup after loading the view from its nib.
-
 }
 
 - (void)viewWillAppear:(BOOL)animated

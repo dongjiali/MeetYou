@@ -30,6 +30,11 @@
 		CD5E7EEC19790FB700D2A469 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD5E7EEB19790FB700D2A469 /* area.plist */; };
 		CD5E7EEF1979114300D2A469 /* CityAndArea.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E7EEE1979114300D2A469 /* CityAndArea.m */; };
 		CD7139531953247B00D84CC7 /* addPhoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD7139521953247B00D84CC7 /* addPhoto@2x.png */; };
+		CD842D0619836AD00070F17C /* 红色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0319836AD00070F17C /* 红色@2x.png */; };
+		CD842D0719836AD00070F17C /* 蓝色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0419836AD00070F17C /* 蓝色@2x.png */; };
+		CD842D0819836AD00070F17C /* 圆低@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0519836AD00070F17C /* 圆低@2x.png */; };
+		CD842D0C19836DDE0070F17C /* MoreCommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD842D0A19836DDE0070F17C /* MoreCommendViewController.m */; };
+		CD842D0D19836DDE0070F17C /* MoreCommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0B19836DDE0070F17C /* MoreCommendViewController.xib */; };
 		CDA1B53C1931A18D0015D8D6 /* MTNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B5391931A18D0015D8D6 /* MTNetWork.m */; };
 		CDA1B53D1931A18D0015D8D6 /* MTRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B53B1931A18D0015D8D6 /* MTRequestSerializer.m */; };
 		CDBA9B661930835D006F292F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B651930835D006F292F /* Foundation.framework */; };
@@ -169,6 +174,12 @@
 		CD5E7EED1979114300D2A469 /* CityAndArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityAndArea.h; sourceTree = "<group>"; };
 		CD5E7EEE1979114300D2A469 /* CityAndArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAndArea.m; sourceTree = "<group>"; };
 		CD7139521953247B00D84CC7 /* addPhoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addPhoto@2x.png"; sourceTree = "<group>"; };
+		CD842D0319836AD00070F17C /* 红色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红色@2x.png"; sourceTree = "<group>"; };
+		CD842D0419836AD00070F17C /* 蓝色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@2x.png"; sourceTree = "<group>"; };
+		CD842D0519836AD00070F17C /* 圆低@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆低@2x.png"; sourceTree = "<group>"; };
+		CD842D0919836DDE0070F17C /* MoreCommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCommendViewController.h; sourceTree = "<group>"; };
+		CD842D0A19836DDE0070F17C /* MoreCommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCommendViewController.m; sourceTree = "<group>"; };
+		CD842D0B19836DDE0070F17C /* MoreCommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreCommendViewController.xib; sourceTree = "<group>"; };
 		CDA1B5381931A18D0015D8D6 /* MTNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNetWork.h; sourceTree = "<group>"; };
 		CDA1B5391931A18D0015D8D6 /* MTNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNetWork.m; sourceTree = "<group>"; };
 		CDA1B53A1931A18D0015D8D6 /* MTRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRequestSerializer.h; sourceTree = "<group>"; };
@@ -609,6 +620,9 @@
 		CDBA9BDC19308821006F292F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CD842D0319836AD00070F17C /* 红色@2x.png */,
+				CD842D0419836AD00070F17C /* 蓝色@2x.png */,
+				CD842D0519836AD00070F17C /* 圆低@2x.png */,
 				CDC4A55319824EF4005B68D4 /* 不喜欢点击@2x.png */,
 				CDC4A55419824EF4005B68D4 /* 不喜欢默认@2x.png */,
 				CDC4A55519824EF4005B68D4 /* 返回@2x.png */,
@@ -830,6 +844,9 @@
 				CD3394CA19729DA20042377B /* CommendTermFindViewController.h */,
 				CD3394CB19729DA20042377B /* CommendTermFindViewController.m */,
 				CD3394CC19729DA20042377B /* CommendTermFindViewController.xib */,
+				CD842D0919836DDE0070F17C /* MoreCommendViewController.h */,
+				CD842D0A19836DDE0070F17C /* MoreCommendViewController.m */,
+				CD842D0B19836DDE0070F17C /* MoreCommendViewController.xib */,
 			);
 			name = "推荐筛选";
 			sourceTree = "<group>";
@@ -940,16 +957,19 @@
 				CDC4A56119824EF4005B68D4 /* 返回@2x.png in Resources */,
 				CDC4A56219824EF4005B68D4 /* 个人信息点击@2x.png in Resources */,
 				CD7139531953247B00D84CC7 /* addPhoto@2x.png in Resources */,
+				CD842D0619836AD00070F17C /* 红色@2x.png in Resources */,
 				CDC4A56719824EF4005B68D4 /* 喜欢点击@2x.png in Resources */,
 				CDBA9B721930835D006F292F /* InfoPlist.strings in Resources */,
 				CDBA9C35193093F8006F292F /* ActivitiesViewController.xib in Resources */,
 				CD3394CE19729DA20042377B /* CommendTermFindViewController.xib in Resources */,
+				CD842D0719836AD00070F17C /* 蓝色@2x.png in Resources */,
 				CDC4A56019824EF4005B68D4 /* 不喜欢默认@2x.png in Resources */,
 				CDC4A56519824EF4005B68D4 /* 送花点击@2x.png in Resources */,
 				CDBA9C3A1930940C006F292F /* ActivitiesNavigationController.xib in Resources */,
 				CDBA9BE019308844006F292F /* btn_login_focus@2x.png in Resources */,
 				CDF99735196837E000EBBBFE /* CommendLikeViewController.xib in Resources */,
 				CDBA9C0119308D12006F292F /* RightViewController.xib in Resources */,
+				CD842D0819836AD00070F17C /* 圆低@2x.png in Resources */,
 				CD3E494F197D32BF001ED097 /* 活动@2x.png in Resources */,
 				CDBA9C1F1930927C006F292F /* SettingViewController.xib in Resources */,
 				CD37F80F195D1DB000DB867C /* UserLogoutView.xib in Resources */,
@@ -966,6 +986,7 @@
 				CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */,
 				CDBA9C0619308D1F006F292F /* RegisterViewController.xib in Resources */,
 				CDBA9C2F193093B6006F292F /* MessageViewController.xib in Resources */,
+				CD842D0D19836DDE0070F17C /* MoreCommendViewController.xib in Resources */,
 				CDC4A56319824EF4005B68D4 /* 个人信息默认@2x.png in Resources */,
 				CDBA9C451930947C006F292F /* CommendViewController.xib in Resources */,
 				CDBA9C2A193093A5006F292F /* MessageNavigationController.xib in Resources */,
@@ -1049,6 +1070,7 @@
 				CDCB606B19573980004E244B /* VPViewController.m in Sources */,
 				CDBA9BFC19308D12006F292F /* MainViewController.m in Sources */,
 				CDCB60571957184C004E244B /* MJRefreshBaseView.m in Sources */,
+				CD842D0C19836DDE0070F17C /* MoreCommendViewController.m in Sources */,
 				CDE5D4BC19729905003FF703 /* HNAPickerDateSource.m in Sources */,
 				CDBA9B741930835D006F292F /* main.m in Sources */,
 				CDCB60591957184C004E244B /* MJRefreshFooterView.m in Sources */,

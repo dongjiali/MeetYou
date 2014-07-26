@@ -10,6 +10,11 @@
 
 @interface CommendLikeViewController ()
 
+@property (weak, nonatomic)IBOutlet UIButton *sendMessageButton;
+@property (weak, nonatomic)IBOutlet UIButton *laterButton;
+@property (weak, nonatomic)IBOutlet UILabel *infoLabel;
+@property (weak, nonatomic)IBOutlet UILabel *myNameLabel;
+@property (weak, nonatomic)IBOutlet UILabel *otherNameLabel;
 @end
 
 @implementation CommendLikeViewController
@@ -21,6 +26,10 @@
         // Custom initialization
     }
     return self;
+}
+//返回
+- (IBAction)backViewController:(id)sender {
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 - (void)viewDidLoad
