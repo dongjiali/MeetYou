@@ -83,6 +83,8 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
         
         _showLeftSideView = NO;
         _showRightSideView = NO;
+        _isLeftViewShow = YES;
+        _isRightViewShow = YES;
         _canMoveWithGesture = YES;
     }
     
@@ -198,7 +200,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
 
 - (void)leftItemClick
 {
-    if (_showLeftSideView)
+    if (_showLeftSideView && _isLeftViewShow)
     {
         CGAffineTransform conT = [self transformWithDirection:RMoveDirectionRight];
         
@@ -216,12 +218,22 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
                          completion:^(BOOL finished) {
                              _tapGestureRec.enabled = YES;
                          }];
-    }else{}
+    }else{
+        CGAffineTransform oriT = CGAffineTransformIdentity;
+        [UIView beginAnimations:nil context:nil];
+        _mainContentView.transform = oriT;
+        
+        [UIView commitAnimations];
+        
+        _tapGestureRec.enabled = NO;
+        _blackCoverView.hidden = YES;
+    }
+    _isLeftViewShow = !_isLeftViewShow;
 }
 
 - (void)rightItemClick
 {
-    if (_showRightSideView)
+    if (_showRightSideView && _isRightViewShow)
     {
         CGAffineTransform conT = [self transformWithDirection:RMoveDirectionLeft];
         
@@ -239,7 +251,17 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
                          completion:^(BOOL finished) {
                              _tapGestureRec.enabled = YES;
                          }];
-    }else{}
+    }else{
+        CGAffineTransform oriT = CGAffineTransformIdentity;
+        [UIView beginAnimations:nil context:nil];
+        _mainContentView.transform = oriT;
+        
+        [UIView commitAnimations];
+        
+        _tapGestureRec.enabled = NO;
+        _blackCoverView.hidden = YES;
+    }
+    _isRightViewShow = !_isRightViewShow;
 }
 
 - (void)closeSideBar
@@ -333,7 +355,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
     {
         CGFloat panX = [panGes translationInView:_mainContentView].x;
         CGFloat finalX = currentTranslateX + panX;
-        if ((finalX > _LeftSJudgeOffset) && _showLeftSideView)
+        if ((finalX > _LeftSJudgeOffset) && _showLeftSideView && _isLeftViewShow)
         {
             CGAffineTransform conT = [self transformWithDirection:RMoveDirectionRight];
             [UIView beginAnimations:nil context:nil];
@@ -345,9 +367,11 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
             [UIView commitAnimations];
             
             _tapGestureRec.enabled = YES;
+            
+            _isLeftViewShow = !_isLeftViewShow;
             return;
         }
-        if ((finalX < -_RightSJudgeOffset) && _showRightSideView)
+        if ((finalX < -_RightSJudgeOffset) && _showRightSideView && _isRightViewShow)
         {
             CGAffineTransform conT = [self transformWithDirection:RMoveDirectionLeft];
             [UIView beginAnimations:nil context:nil];
@@ -359,6 +383,7 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
             [UIView commitAnimations];
             
             _tapGestureRec.enabled = YES;
+            _isRightViewShow = !_isRightViewShow;
             return;
         }
         else
@@ -371,6 +396,8 @@ typedef NS_ENUM(NSInteger, RMoveDirection) {
             
             _tapGestureRec.enabled = NO;
             _blackCoverView.hidden = YES;
+            _isRightViewShow = YES;
+            _isLeftViewShow = YES;
         }
     }
 }

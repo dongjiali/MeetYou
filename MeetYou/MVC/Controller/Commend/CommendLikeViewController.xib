@@ -9,7 +9,9 @@
             <connections>
                 <outlet property="infoLabel" destination="D9V-pi-0Bh" id="lj5-nt-eig"/>
                 <outlet property="laterButton" destination="3oO-sc-chn" id="24y-BH-ciN"/>
+                <outlet property="myHeaderImage" destination="qeE-lO-1C7" id="jD0-QS-t1t"/>
                 <outlet property="myNameLabel" destination="CaW-Zw-BGq" id="5oY-aj-uuE"/>
+                <outlet property="otherHeaderImage" destination="pMM-7W-MLG" id="Q0u-cD-46l"/>
                 <outlet property="otherNameLabel" destination="Se5-Y5-d4v" id="zwj-u3-BzK"/>
                 <outlet property="sendMessageButton" destination="4ca-2q-ee9" id="ATi-ZG-dIN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -21,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="某某某" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaW-Zw-BGq">
-                    <rect key="frame" x="10" y="188" width="100" height="21"/>
+                    <rect key="frame" x="20" y="188" width="100" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
@@ -45,6 +47,9 @@
                     <state key="normal" title="发消息" backgroundImage="红色按钮.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="sendMessage:" destination="-1" eventType="touchUpInside" id="e6d-86-9I3"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oO-sc-chn">
                     <rect key="frame" x="20" y="439" width="280" height="43"/>
@@ -54,6 +59,9 @@
                         <color key="titleColor" red="0.047058823529411764" green="0.72156862745098038" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="laterDoSomeThing:" destination="-1" eventType="touchUpInside" id="POd-ht-f95"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91d-cG-PwL">
                     <rect key="frame" x="20" y="30" width="27" height="27"/>
@@ -65,6 +73,14 @@
                         <action selector="backViewController:" destination="-1" eventType="touchUpInside" id="0iY-Z3-lQB"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圆低.png" translatesAutoresizingMaskIntoConstraints="NO" id="qeE-lO-1C7">
+                    <rect key="frame" x="23" y="85" width="95" height="95"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="圆低.png" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-7W-MLG">
+                    <rect key="frame" x="203" y="85" width="95" height="95"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -72,6 +88,7 @@
         </view>
     </objects>
     <resources>
+        <image name="圆低.png" width="95" height="95"/>
         <image name="红色按钮.png" width="304" height="44"/>
         <image name="蓝色.png" width="240" height="43"/>
         <image name="返回.png" width="27" height="27"/>

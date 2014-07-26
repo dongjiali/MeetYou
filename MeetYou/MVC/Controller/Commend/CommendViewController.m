@@ -9,8 +9,7 @@
 #import "CommendViewController.h"
 #import "CommendLikeViewController.h"
 #import "UserInfoViewController.h"
-#import "CommendTermFindViewController.h"
-#import "MoreCommendViewController.h"
+#import "ShakeViewController.h"
 
 @interface CommendViewController ()
 @property (nonatomic,weak)IBOutlet UIButton *dataButton;
@@ -25,7 +24,7 @@
 
 @property (nonatomic,strong) CommendLikeViewController *likeViewController; //喜欢
 @property (nonatomic,strong) UserInfoViewController *userInfoViewController; //个人资料
-@property (nonatomic,strong) CommendTermFindViewController *termFindViewController; //筛选
+@property (nonatomic,strong) ShakeViewController *shakeViewController;//摇一摇
 @end
 
 @implementation CommendViewController
@@ -115,12 +114,10 @@
  *  @param sender
  */
 - (IBAction)termFind:(id)sender {
-    if (!_termFindViewController) {
-        self.termFindViewController = [[CommendTermFindViewController alloc]init];
+    if (!_shakeViewController) {
+        self.shakeViewController = [[ShakeViewController alloc]init];
     }
-    [self presentViewController:_termFindViewController animated:YES completion:^{
-        
-    }];
+    [self.navigationController pushViewController:_shakeViewController animated:true];
 }
 
 

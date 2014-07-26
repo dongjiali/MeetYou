@@ -31,7 +31,10 @@
     return self;
 }
 
+
+
 #pragma -mark- view load
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -49,7 +52,7 @@
  *  @param sender
  */
 - (IBAction)dismissViewController:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
+    [self dismissViewControllerAnimated:true completion:^{
         
     }];
 }
@@ -60,7 +63,7 @@
  *  @param sender
  */
 - (IBAction)doneSelected:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
+    [self dismissViewControllerAnimated:true completion:^{
         
     }];
 }
@@ -85,7 +88,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     switch (indexPath.row) {
         case 0:{
             NSMutableArray *array = [[NSMutableArray alloc]initWithCapacity:1];
@@ -103,7 +106,7 @@
         {
             [_pickerView setItemsArray:@[@[@"中学",@"高中",@"大专",@"本科",@"硕士",@"博士"]]];
             [_pickerView requestDate:^(NSArray *selectedArray) {
-                 _dataArray[indexPath.row]= selectedArray[0];
+                _dataArray[indexPath.row]= selectedArray[0];
                 [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
             }];
         }
@@ -113,7 +116,7 @@
             NSMutableArray *array = [CityAndArea province];
             [_pickerView setItemsArray:@[@[@"朝阳",@"海淀",@"东城",@"西城",@"昌平",@"丰台"]]];
             [_pickerView requestDate:^(NSArray *selectedArray) {
-                 _dataArray[indexPath.row] = selectedArray[0];
+                _dataArray[indexPath.row] = selectedArray[0];
                 [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
             }];
         }
@@ -128,25 +131,18 @@
 // section个数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0) {
     return _dataArray.count;
-    }
-    
-    if (section == 1) {
-        return 1;
-    }
-    return 0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 40.0;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+//{
+//    return 40.0;
+//}
 
 - (void)setMembers
 {

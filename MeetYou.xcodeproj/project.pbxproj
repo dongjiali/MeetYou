@@ -33,8 +33,6 @@
 		CD842D0619836AD00070F17C /* 红色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0319836AD00070F17C /* 红色@2x.png */; };
 		CD842D0719836AD00070F17C /* 蓝色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0419836AD00070F17C /* 蓝色@2x.png */; };
 		CD842D0819836AD00070F17C /* 圆低@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0519836AD00070F17C /* 圆低@2x.png */; };
-		CD842D0C19836DDE0070F17C /* MoreCommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD842D0A19836DDE0070F17C /* MoreCommendViewController.m */; };
-		CD842D0D19836DDE0070F17C /* MoreCommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0B19836DDE0070F17C /* MoreCommendViewController.xib */; };
 		CDA1B53C1931A18D0015D8D6 /* MTNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B5391931A18D0015D8D6 /* MTNetWork.m */; };
 		CDA1B53D1931A18D0015D8D6 /* MTRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B53B1931A18D0015D8D6 /* MTRequestSerializer.m */; };
 		CDBA9B661930835D006F292F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B651930835D006F292F /* Foundation.framework */; };
@@ -123,7 +121,12 @@
 		CDE5D4BB19729905003FF703 /* HNAPickerCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4B219729905003FF703 /* HNAPickerCollectionViewFlowLayout.m */; };
 		CDE5D4BC19729905003FF703 /* HNAPickerDateSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4B419729905003FF703 /* HNAPickerDateSource.m */; };
 		CDE5D4BD19729905003FF703 /* HNAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE5D4B719729905003FF703 /* HNAPickerView.m */; };
+		CDF0334C198376A100882699 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF0334A198376A100882699 /* ShakeViewController.m */; };
+		CDF0334D198376A100882699 /* ShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF0334B198376A100882699 /* ShakeViewController.xib */; };
+		CDF0334F19837B3A00882699 /* 摇一摇@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF0334E19837B3A00882699 /* 摇一摇@2x.png */; };
 		CDF29808197295C20010F41C /* MTiToast.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF29807197295C20010F41C /* MTiToast.m */; };
+		CDF5221C1983A2CC00F0A7AE /* bacgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF5221A1983A2CC00F0A7AE /* bacgImage.png */; };
+		CDF5221D1983A2CC00F0A7AE /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF5221B1983A2CC00F0A7AE /* header.png */; };
 		CDF99734196837E000EBBBFE /* CommendLikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF99732196837E000EBBBFE /* CommendLikeViewController.m */; };
 		CDF99735196837E000EBBBFE /* CommendLikeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDF99733196837E000EBBBFE /* CommendLikeViewController.xib */; };
 		CDF9973719683A4000EBBBFE /* 红色按钮@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF9973619683A4000EBBBFE /* 红色按钮@2x.png */; };
@@ -177,9 +180,6 @@
 		CD842D0319836AD00070F17C /* 红色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红色@2x.png"; sourceTree = "<group>"; };
 		CD842D0419836AD00070F17C /* 蓝色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@2x.png"; sourceTree = "<group>"; };
 		CD842D0519836AD00070F17C /* 圆低@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆低@2x.png"; sourceTree = "<group>"; };
-		CD842D0919836DDE0070F17C /* MoreCommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreCommendViewController.h; sourceTree = "<group>"; };
-		CD842D0A19836DDE0070F17C /* MoreCommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreCommendViewController.m; sourceTree = "<group>"; };
-		CD842D0B19836DDE0070F17C /* MoreCommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreCommendViewController.xib; sourceTree = "<group>"; };
 		CDA1B5381931A18D0015D8D6 /* MTNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNetWork.h; sourceTree = "<group>"; };
 		CDA1B5391931A18D0015D8D6 /* MTNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNetWork.m; sourceTree = "<group>"; };
 		CDA1B53A1931A18D0015D8D6 /* MTRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRequestSerializer.h; sourceTree = "<group>"; };
@@ -311,8 +311,14 @@
 		CDE5D4B519729905003FF703 /* HNAPickerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerMacro.h; sourceTree = "<group>"; };
 		CDE5D4B619729905003FF703 /* HNAPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNAPickerView.h; sourceTree = "<group>"; };
 		CDE5D4B719729905003FF703 /* HNAPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNAPickerView.m; sourceTree = "<group>"; };
+		CDF03349198376A100882699 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		CDF0334A198376A100882699 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		CDF0334B198376A100882699 /* ShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeViewController.xib; sourceTree = "<group>"; };
+		CDF0334E19837B3A00882699 /* 摇一摇@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "摇一摇@2x.png"; sourceTree = "<group>"; };
 		CDF29806197295C20010F41C /* MTiToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTiToast.h; sourceTree = "<group>"; };
 		CDF29807197295C20010F41C /* MTiToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTiToast.m; sourceTree = "<group>"; };
+		CDF5221A1983A2CC00F0A7AE /* bacgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bacgImage.png; sourceTree = "<group>"; };
+		CDF5221B1983A2CC00F0A7AE /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		CDF99731196837E000EBBBFE /* CommendLikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendLikeViewController.h; sourceTree = "<group>"; };
 		CDF99732196837E000EBBBFE /* CommendLikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendLikeViewController.m; sourceTree = "<group>"; };
 		CDF99733196837E000EBBBFE /* CommendLikeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommendLikeViewController.xib; sourceTree = "<group>"; };
@@ -620,6 +626,8 @@
 		CDBA9BDC19308821006F292F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CDF5221A1983A2CC00F0A7AE /* bacgImage.png */,
+				CDF5221B1983A2CC00F0A7AE /* header.png */,
 				CD842D0319836AD00070F17C /* 红色@2x.png */,
 				CD842D0419836AD00070F17C /* 蓝色@2x.png */,
 				CD842D0519836AD00070F17C /* 圆低@2x.png */,
@@ -628,6 +636,7 @@
 				CDC4A55519824EF4005B68D4 /* 返回@2x.png */,
 				CDC4A55619824EF4005B68D4 /* 个人信息点击@2x.png */,
 				CDC4A55719824EF4005B68D4 /* 个人信息默认@2x.png */,
+				CDF0334E19837B3A00882699 /* 摇一摇@2x.png */,
 				CDC4A55819824EF4005B68D4 /* 更多@2x.png */,
 				CDC4A55919824EF4005B68D4 /* 送花点击@2x.png */,
 				CDC4A55A19824EF4005B68D4 /* 送花默认@2x.png */,
@@ -841,14 +850,22 @@
 		CDE5D4BE19729CA8003FF703 /* 推荐筛选 */ = {
 			isa = PBXGroup;
 			children = (
+				CDF033481983768500882699 /* 摇一摇 */,
 				CD3394CA19729DA20042377B /* CommendTermFindViewController.h */,
 				CD3394CB19729DA20042377B /* CommendTermFindViewController.m */,
 				CD3394CC19729DA20042377B /* CommendTermFindViewController.xib */,
-				CD842D0919836DDE0070F17C /* MoreCommendViewController.h */,
-				CD842D0A19836DDE0070F17C /* MoreCommendViewController.m */,
-				CD842D0B19836DDE0070F17C /* MoreCommendViewController.xib */,
 			);
 			name = "推荐筛选";
+			sourceTree = "<group>";
+		};
+		CDF033481983768500882699 /* 摇一摇 */ = {
+			isa = PBXGroup;
+			children = (
+				CDF03349198376A100882699 /* ShakeViewController.h */,
+				CDF0334A198376A100882699 /* ShakeViewController.m */,
+				CDF0334B198376A100882699 /* ShakeViewController.xib */,
+			);
+			name = "摇一摇";
 			sourceTree = "<group>";
 		};
 		CDF29802197295A40010F41C /* AlertView */ = {
@@ -952,6 +969,7 @@
 				CDC4A56419824EF4005B68D4 /* 更多@2x.png in Resources */,
 				CDBA9BFF19308D12006F292F /* NavigationController.xib in Resources */,
 				CDC4A55219824519005B68D4 /* 线条@2x.png in Resources */,
+				CDF5221C1983A2CC00F0A7AE /* bacgImage.png in Resources */,
 				CDBA9BFD19308D12006F292F /* MainViewController.xib in Resources */,
 				CDBA9BFB19308D12006F292F /* LeftViewController.xib in Resources */,
 				CDC4A56119824EF4005B68D4 /* 返回@2x.png in Resources */,
@@ -979,14 +997,15 @@
 				CDBA9C0E19308D29006F292F /* UserInfoNavigationController.xib in Resources */,
 				CD3951381931FBE600E4CEA5 /* ImageCropperViewController.xib in Resources */,
 				CDC4A56A19824EF4005B68D4 /* 资料默认@2x.png in Resources */,
+				CDF0334D198376A100882699 /* ShakeViewController.xib in Resources */,
 				CDBA9C24193092B4006F292F /* SettingNavigationController.xib in Resources */,
 				CDBA9BE219308844006F292F /* select_pic@2x.png in Resources */,
 				CD5E7EEC19790FB700D2A469 /* area.plist in Resources */,
 				CD0CF8AB196436D7007BEB72 /* LeftViewControllerTableViewCell.xib in Resources */,
+				CDF5221D1983A2CC00F0A7AE /* header.png in Resources */,
 				CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */,
 				CDBA9C0619308D1F006F292F /* RegisterViewController.xib in Resources */,
 				CDBA9C2F193093B6006F292F /* MessageViewController.xib in Resources */,
-				CD842D0D19836DDE0070F17C /* MoreCommendViewController.xib in Resources */,
 				CDC4A56319824EF4005B68D4 /* 个人信息默认@2x.png in Resources */,
 				CDBA9C451930947C006F292F /* CommendViewController.xib in Resources */,
 				CDBA9C2A193093A5006F292F /* MessageNavigationController.xib in Resources */,
@@ -1000,6 +1019,7 @@
 				CDBA9BE119308844006F292F /* btn_login@2x.png in Resources */,
 				CDBA9B7D1930835D006F292F /* Images.xcassets in Resources */,
 				CD3E4950197D32BF001ED097 /* 设置@2x.png in Resources */,
+				CDF0334F19837B3A00882699 /* 摇一摇@2x.png in Resources */,
 				CDBA9C401930946A006F292F /* CommendNavigationController.xib in Resources */,
 				CDC4A56619824EF4005B68D4 /* 送花默认@2x.png in Resources */,
 			);
@@ -1063,6 +1083,7 @@
 				CDCB605A1957184C004E244B /* MJRefreshHeaderView.m in Sources */,
 				CDBA9C441930947C006F292F /* CommendViewController.m in Sources */,
 				CDBA9B781930835D006F292F /* AppDelegate.m in Sources */,
+				CDF0334C198376A100882699 /* ShakeViewController.m in Sources */,
 				CD3951321931DF3600E4CEA5 /* MTPhoto.m in Sources */,
 				CDCB603F1957120C004E244B /* UserInfoDataManager.m in Sources */,
 				CD0CF8AA196436D7007BEB72 /* LeftViewControllerTableViewCell.m in Sources */,
@@ -1070,7 +1091,6 @@
 				CDCB606B19573980004E244B /* VPViewController.m in Sources */,
 				CDBA9BFC19308D12006F292F /* MainViewController.m in Sources */,
 				CDCB60571957184C004E244B /* MJRefreshBaseView.m in Sources */,
-				CD842D0C19836DDE0070F17C /* MoreCommendViewController.m in Sources */,
 				CDE5D4BC19729905003FF703 /* HNAPickerDateSource.m in Sources */,
 				CDBA9B741930835D006F292F /* main.m in Sources */,
 				CDCB60591957184C004E244B /* MJRefreshFooterView.m in Sources */,

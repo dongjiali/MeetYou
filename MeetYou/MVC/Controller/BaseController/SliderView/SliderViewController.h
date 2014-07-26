@@ -32,6 +32,9 @@
 
 @property (nonatomic, assign) BOOL canMoveWithGesture;
 
+@property (nonatomic, assign) BOOL isLeftViewShow;
+@property (nonatomic, assign) BOOL isRightViewShow;
+
 + (SliderViewController*)sharedSliderController;
 
 - (void)showContentControllerWithModel:(NSString*)className;
