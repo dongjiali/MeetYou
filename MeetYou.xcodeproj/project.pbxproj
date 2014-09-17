@@ -33,6 +33,7 @@
 		CD842D0619836AD00070F17C /* 红色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0319836AD00070F17C /* 红色@2x.png */; };
 		CD842D0719836AD00070F17C /* 蓝色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0419836AD00070F17C /* 蓝色@2x.png */; };
 		CD842D0819836AD00070F17C /* 圆低@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0519836AD00070F17C /* 圆低@2x.png */; };
+		CD8B9F8D19C9998D000989B2 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8B9F8C19C9998D000989B2 /* libWeiboSDK.a */; };
 		CDA1B53C1931A18D0015D8D6 /* MTNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B5391931A18D0015D8D6 /* MTNetWork.m */; };
 		CDA1B53D1931A18D0015D8D6 /* MTRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B53B1931A18D0015D8D6 /* MTRequestSerializer.m */; };
 		CDBA9B661930835D006F292F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B651930835D006F292F /* Foundation.framework */; };
@@ -54,7 +55,6 @@
 		CDBA9BC71930849E006F292F /* SliderContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBA9BC21930849E006F292F /* SliderContentViewController.xib */; };
 		CDBA9BC81930849E006F292F /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBA9BC41930849E006F292F /* SliderViewController.m */; };
 		CDBA9BC91930849E006F292F /* SliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBA9BC51930849E006F292F /* SliderViewController.xib */; };
-		CDBA9BD619308694006F292F /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9BD319308694006F292F /* libWeiboSDK.a */; };
 		CDBA9BD719308694006F292F /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDBA9BD419308694006F292F /* WeiboSDK.bundle */; };
 		CDBA9BE019308844006F292F /* btn_login_focus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBA9BDD19308844006F292F /* btn_login_focus@2x.png */; };
 		CDBA9BE119308844006F292F /* btn_login@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDBA9BDE19308844006F292F /* btn_login@2x.png */; };
@@ -180,6 +180,7 @@
 		CD842D0319836AD00070F17C /* 红色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红色@2x.png"; sourceTree = "<group>"; };
 		CD842D0419836AD00070F17C /* 蓝色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "蓝色@2x.png"; sourceTree = "<group>"; };
 		CD842D0519836AD00070F17C /* 圆低@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆低@2x.png"; sourceTree = "<group>"; };
+		CD8B9F8C19C9998D000989B2 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		CDA1B5381931A18D0015D8D6 /* MTNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTNetWork.h; sourceTree = "<group>"; };
 		CDA1B5391931A18D0015D8D6 /* MTNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNetWork.m; sourceTree = "<group>"; };
 		CDA1B53A1931A18D0015D8D6 /* MTRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRequestSerializer.h; sourceTree = "<group>"; };
@@ -208,7 +209,6 @@
 		CDBA9BC31930849E006F292F /* SliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
 		CDBA9BC41930849E006F292F /* SliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
 		CDBA9BC51930849E006F292F /* SliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderViewController.xib; sourceTree = "<group>"; };
-		CDBA9BD319308694006F292F /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		CDBA9BD419308694006F292F /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
 		CDBA9BD519308694006F292F /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		CDBA9BD9193086D0006F292F /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
@@ -332,8 +332,8 @@
 			files = (
 				CD3951281931B92600E4CEA5 /* CFNetwork.framework in Frameworks */,
 				CDBA9C1219309096006F292F /* ImageIO.framework in Frameworks */,
-				CDBA9BD619308694006F292F /* libWeiboSDK.a in Frameworks */,
 				CDBA9B681930835D006F292F /* CoreGraphics.framework in Frameworks */,
+				CD8B9F8D19C9998D000989B2 /* libWeiboSDK.a in Frameworks */,
 				CDBA9B6C1930835D006F292F /* CoreData.framework in Frameworks */,
 				CDBA9B6A1930835D006F292F /* UIKit.framework in Frameworks */,
 				CDBA9B661930835D006F292F /* Foundation.framework in Frameworks */,
@@ -598,7 +598,7 @@
 		CDBA9BD219308694006F292F /* libWeiboSDK */ = {
 			isa = PBXGroup;
 			children = (
-				CDBA9BD319308694006F292F /* libWeiboSDK.a */,
+				CD8B9F8C19C9998D000989B2 /* libWeiboSDK.a */,
 				CDBA9BD419308694006F292F /* WeiboSDK.bundle */,
 				CDBA9BD519308694006F292F /* WeiboSDK.h */,
 			);
@@ -1248,6 +1248,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SRCROOT)/MeetYou",
+					"$(PROJECT_DIR)/MeetYou",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetYou/MeetYou-Prefix.pch";
@@ -1257,6 +1259,7 @@
 					"$(PROJECT_DIR)/MeetYou/Vendors/libWeiboSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MeetYou/Vendors/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1272,6 +1275,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SRCROOT)/MeetYou",
+					"$(PROJECT_DIR)/MeetYou",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetYou/MeetYou-Prefix.pch";
@@ -1281,6 +1286,7 @@
 					"$(PROJECT_DIR)/MeetYou/Vendors/libWeiboSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MeetYou/Vendors/";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
