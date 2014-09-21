@@ -10,6 +10,8 @@
 		9AA47C75A2BF410DAA621961 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C93A32F50F4B66A32C70EE /* libPods.a */; };
 		CD0CF8AA196436D7007BEB72 /* LeftViewControllerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0CF8A8196436D7007BEB72 /* LeftViewControllerTableViewCell.m */; };
 		CD0CF8AB196436D7007BEB72 /* LeftViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0CF8A9196436D7007BEB72 /* LeftViewControllerTableViewCell.xib */; };
+		CD14629D19CEBC9500E857E5 /* ActivitiesSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD14629B19CEBC9500E857E5 /* ActivitiesSearchViewController.m */; };
+		CD14629E19CEBC9500E857E5 /* ActivitiesSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD14629C19CEBC9500E857E5 /* ActivitiesSearchViewController.xib */; };
 		CD3394CD19729DA20042377B /* CommendTermFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3394CB19729DA20042377B /* CommendTermFindViewController.m */; };
 		CD3394CE19729DA20042377B /* CommendTermFindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3394CC19729DA20042377B /* CommendTermFindViewController.xib */; };
 		CD3394D31972A2070042377B /* CommendTermFindCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3394D11972A2070042377B /* CommendTermFindCell.m */; };
@@ -35,6 +37,14 @@
 		CD842D0819836AD00070F17C /* 圆低@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD842D0519836AD00070F17C /* 圆低@2x.png */; };
 		CDA1B53C1931A18D0015D8D6 /* MTNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B5391931A18D0015D8D6 /* MTNetWork.m */; };
 		CDA1B53D1931A18D0015D8D6 /* MTRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA1B53B1931A18D0015D8D6 /* MTRequestSerializer.m */; };
+		CDA66C3019CEC93600116487 /* ActivitiesTableListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C2E19CEC93600116487 /* ActivitiesTableListCell.m */; };
+		CDA66C3119CEC93600116487 /* ActivitiesTableListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C2F19CEC93600116487 /* ActivitiesTableListCell.xib */; };
+		CDA66C3719CECF5C00116487 /* ActivitiesMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C3519CECF5C00116487 /* ActivitiesMessageViewController.m */; };
+		CDA66C3819CECF5C00116487 /* ActivitiesMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C3619CECF5C00116487 /* ActivitiesMessageViewController.xib */; };
+		CDA66C3C19CECF9600116487 /* ActivitiesNearbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C3A19CECF9600116487 /* ActivitiesNearbyViewController.m */; };
+		CDA66C3D19CECF9600116487 /* ActivitiesNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C3B19CECF9600116487 /* ActivitiesNearbyViewController.xib */; };
+		CDA66C4119CED02100116487 /* ActivitiesMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C3F19CED02100116487 /* ActivitiesMyViewController.m */; };
+		CDA66C4219CED02100116487 /* ActivitiesMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C4019CED02100116487 /* ActivitiesMyViewController.xib */; };
 		CDBA9B661930835D006F292F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B651930835D006F292F /* Foundation.framework */; };
 		CDBA9B681930835D006F292F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B671930835D006F292F /* CoreGraphics.framework */; };
 		CDBA9B6A1930835D006F292F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B691930835D006F292F /* UIKit.framework */; };
@@ -148,6 +158,9 @@
 		CD0CF8A7196436D7007BEB72 /* LeftViewControllerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewControllerTableViewCell.h; sourceTree = "<group>"; };
 		CD0CF8A8196436D7007BEB72 /* LeftViewControllerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewControllerTableViewCell.m; sourceTree = "<group>"; };
 		CD0CF8A9196436D7007BEB72 /* LeftViewControllerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewControllerTableViewCell.xib; sourceTree = "<group>"; };
+		CD14629A19CEBC9500E857E5 /* ActivitiesSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesSearchViewController.h; sourceTree = "<group>"; };
+		CD14629B19CEBC9500E857E5 /* ActivitiesSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesSearchViewController.m; sourceTree = "<group>"; };
+		CD14629C19CEBC9500E857E5 /* ActivitiesSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesSearchViewController.xib; sourceTree = "<group>"; };
 		CD3394CA19729DA20042377B /* CommendTermFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommendTermFindViewController.h; sourceTree = "<group>"; };
 		CD3394CB19729DA20042377B /* CommendTermFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommendTermFindViewController.m; sourceTree = "<group>"; };
 		CD3394CC19729DA20042377B /* CommendTermFindViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommendTermFindViewController.xib; sourceTree = "<group>"; };
@@ -184,6 +197,18 @@
 		CDA1B5391931A18D0015D8D6 /* MTNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTNetWork.m; sourceTree = "<group>"; };
 		CDA1B53A1931A18D0015D8D6 /* MTRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTRequestSerializer.h; sourceTree = "<group>"; };
 		CDA1B53B1931A18D0015D8D6 /* MTRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTRequestSerializer.m; sourceTree = "<group>"; };
+		CDA66C2D19CEC93600116487 /* ActivitiesTableListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesTableListCell.h; sourceTree = "<group>"; };
+		CDA66C2E19CEC93600116487 /* ActivitiesTableListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesTableListCell.m; sourceTree = "<group>"; };
+		CDA66C2F19CEC93600116487 /* ActivitiesTableListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesTableListCell.xib; sourceTree = "<group>"; };
+		CDA66C3419CECF5C00116487 /* ActivitiesMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesMessageViewController.h; sourceTree = "<group>"; };
+		CDA66C3519CECF5C00116487 /* ActivitiesMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesMessageViewController.m; sourceTree = "<group>"; };
+		CDA66C3619CECF5C00116487 /* ActivitiesMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesMessageViewController.xib; sourceTree = "<group>"; };
+		CDA66C3919CECF9600116487 /* ActivitiesNearbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesNearbyViewController.h; sourceTree = "<group>"; };
+		CDA66C3A19CECF9600116487 /* ActivitiesNearbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesNearbyViewController.m; sourceTree = "<group>"; };
+		CDA66C3B19CECF9600116487 /* ActivitiesNearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesNearbyViewController.xib; sourceTree = "<group>"; };
+		CDA66C3E19CED02100116487 /* ActivitiesMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesMyViewController.h; sourceTree = "<group>"; };
+		CDA66C3F19CED02100116487 /* ActivitiesMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesMyViewController.m; sourceTree = "<group>"; };
+		CDA66C4019CED02100116487 /* ActivitiesMyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesMyViewController.xib; sourceTree = "<group>"; };
 		CDBA9B621930835D006F292F /* MeetYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBA9B651930835D006F292F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDBA9B671930835D006F292F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -365,6 +390,16 @@
 			name = LeftView;
 			sourceTree = "<group>";
 		};
+		CD14629919CEBC6C00E857E5 /* ActivitiesSearch */ = {
+			isa = PBXGroup;
+			children = (
+				CD14629A19CEBC9500E857E5 /* ActivitiesSearchViewController.h */,
+				CD14629B19CEBC9500E857E5 /* ActivitiesSearchViewController.m */,
+				CD14629C19CEBC9500E857E5 /* ActivitiesSearchViewController.xib */,
+			);
+			name = ActivitiesSearch;
+			sourceTree = "<group>";
+		};
 		CD3394CF1972A1D80042377B /* CommendTermFindCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +458,32 @@
 				CDCB603B195711C0004E244B /* LoginModel */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CDA66C2C19CEC92000116487 /* ActivitiesTableListCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDA66C2D19CEC93600116487 /* ActivitiesTableListCell.h */,
+				CDA66C2E19CEC93600116487 /* ActivitiesTableListCell.m */,
+				CDA66C2F19CEC93600116487 /* ActivitiesTableListCell.xib */,
+			);
+			name = ActivitiesTableListCell;
+			sourceTree = "<group>";
+		};
+		CDA66C3319CECF1A00116487 /* ActivitiesTooBar */ = {
+			isa = PBXGroup;
+			children = (
+				CDA66C3419CECF5C00116487 /* ActivitiesMessageViewController.h */,
+				CDA66C3519CECF5C00116487 /* ActivitiesMessageViewController.m */,
+				CDA66C3619CECF5C00116487 /* ActivitiesMessageViewController.xib */,
+				CDA66C3919CECF9600116487 /* ActivitiesNearbyViewController.h */,
+				CDA66C3A19CECF9600116487 /* ActivitiesNearbyViewController.m */,
+				CDA66C3B19CECF9600116487 /* ActivitiesNearbyViewController.xib */,
+				CDA66C3E19CED02100116487 /* ActivitiesMyViewController.h */,
+				CDA66C3F19CED02100116487 /* ActivitiesMyViewController.m */,
+				CDA66C4019CED02100116487 /* ActivitiesMyViewController.xib */,
+			);
+			name = ActivitiesTooBar;
 			sourceTree = "<group>";
 		};
 		CDBA9B591930835D006F292F = {
@@ -702,6 +763,8 @@
 		CDBA9C30193093DE006F292F /* Activities */ = {
 			isa = PBXGroup;
 			children = (
+				CDA66C3319CECF1A00116487 /* ActivitiesTooBar */,
+				CD14629919CEBC6C00E857E5 /* ActivitiesSearch */,
 				CDBA9C31193093F8006F292F /* ActivitiesViewController.h */,
 				CDBA9C32193093F8006F292F /* ActivitiesViewController.m */,
 				CDBA9C33193093F8006F292F /* ActivitiesViewController.xib */,
@@ -796,6 +859,7 @@
 		CDCB605F19571DBD004E244B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CDA66C2C19CEC92000116487 /* ActivitiesTableListCell */,
 				CD3394CF1972A1D80042377B /* CommendTermFindCell */,
 				CD0CF8A6196436A5007BEB72 /* LeftView */,
 				CDDA479C195D1D0B00EE1EB6 /* User */,
@@ -977,9 +1041,12 @@
 				CD7139531953247B00D84CC7 /* addPhoto@2x.png in Resources */,
 				CD842D0619836AD00070F17C /* 红色@2x.png in Resources */,
 				CDC4A56719824EF4005B68D4 /* 喜欢点击@2x.png in Resources */,
+				CDA66C3819CECF5C00116487 /* ActivitiesMessageViewController.xib in Resources */,
+				CDA66C3119CEC93600116487 /* ActivitiesTableListCell.xib in Resources */,
 				CDBA9B721930835D006F292F /* InfoPlist.strings in Resources */,
 				CDBA9C35193093F8006F292F /* ActivitiesViewController.xib in Resources */,
 				CD3394CE19729DA20042377B /* CommendTermFindViewController.xib in Resources */,
+				CDA66C3D19CECF9600116487 /* ActivitiesNearbyViewController.xib in Resources */,
 				CD842D0719836AD00070F17C /* 蓝色@2x.png in Resources */,
 				CDC4A56019824EF4005B68D4 /* 不喜欢默认@2x.png in Resources */,
 				CDC4A56519824EF4005B68D4 /* 送花点击@2x.png in Resources */,
@@ -990,6 +1057,7 @@
 				CD842D0819836AD00070F17C /* 圆低@2x.png in Resources */,
 				CD3E494F197D32BF001ED097 /* 活动@2x.png in Resources */,
 				CDBA9C1F1930927C006F292F /* SettingViewController.xib in Resources */,
+				CDA66C4219CED02100116487 /* ActivitiesMyViewController.xib in Resources */,
 				CD37F80F195D1DB000DB867C /* UserLogoutView.xib in Resources */,
 				CDBA9BC91930849E006F292F /* SliderViewController.xib in Resources */,
 				CDC4A56819824EF4005B68D4 /* 喜欢默认@2x.png in Resources */,
@@ -1001,6 +1069,7 @@
 				CDBA9C24193092B4006F292F /* SettingNavigationController.xib in Resources */,
 				CDBA9BE219308844006F292F /* select_pic@2x.png in Resources */,
 				CD5E7EEC19790FB700D2A469 /* area.plist in Resources */,
+				CD14629E19CEBC9500E857E5 /* ActivitiesSearchViewController.xib in Resources */,
 				CD0CF8AB196436D7007BEB72 /* LeftViewControllerTableViewCell.xib in Resources */,
 				CDF5221D1983A2CC00F0A7AE /* header.png in Resources */,
 				CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */,
@@ -1075,8 +1144,10 @@
 			files = (
 				CDCB606A19573980004E244B /* VPImageCropperViewController.m in Sources */,
 				CD39512C1931D7DB00E4CEA5 /* MTPhotoWall.m in Sources */,
+				CD14629D19CEBC9500E857E5 /* ActivitiesSearchViewController.m in Sources */,
 				CDF29808197295C20010F41C /* MTiToast.m in Sources */,
 				CDBA9BFA19308D12006F292F /* LeftViewController.m in Sources */,
+				CDA66C3719CECF5C00116487 /* ActivitiesMessageViewController.m in Sources */,
 				CDBA9C0D19308D29006F292F /* UserInfoNavigationController.m in Sources */,
 				CDBA9C3F1930946A006F292F /* CommendNavigationController.m in Sources */,
 				CDBA9C1E1930927C006F292F /* SettingViewController.m in Sources */,
@@ -1086,6 +1157,7 @@
 				CDF0334C198376A100882699 /* ShakeViewController.m in Sources */,
 				CD3951321931DF3600E4CEA5 /* MTPhoto.m in Sources */,
 				CDCB603F1957120C004E244B /* UserInfoDataManager.m in Sources */,
+				CDA66C3C19CECF9600116487 /* ActivitiesNearbyViewController.m in Sources */,
 				CD0CF8AA196436D7007BEB72 /* LeftViewControllerTableViewCell.m in Sources */,
 				CDE5D4BD19729905003FF703 /* HNAPickerView.m in Sources */,
 				CDCB606B19573980004E244B /* VPViewController.m in Sources */,
@@ -1095,6 +1167,7 @@
 				CDBA9B741930835D006F292F /* main.m in Sources */,
 				CDCB60591957184C004E244B /* MJRefreshFooterView.m in Sources */,
 				CDBA9C391930940C006F292F /* ActivitiesNavigationController.m in Sources */,
+				CDA66C4119CED02100116487 /* ActivitiesMyViewController.m in Sources */,
 				CDE5D4B819729905003FF703 /* HNAPicker.m in Sources */,
 				CDBA9C2E193093B6006F292F /* MessageViewController.m in Sources */,
 				CD3394CD19729DA20042377B /* CommendTermFindViewController.m in Sources */,
@@ -1103,6 +1176,7 @@
 				CDBA9C0019308D12006F292F /* RightViewController.m in Sources */,
 				CDBA9C23193092B4006F292F /* SettingNavigationController.m in Sources */,
 				CDE5D4B919729905003FF703 /* HNAPickerCollectionView.m in Sources */,
+				CDA66C3019CEC93600116487 /* ActivitiesTableListCell.m in Sources */,
 				CDCB606319571DE0004E244B /* UserInfoTableViewCell.m in Sources */,
 				CDE5D4BB19729905003FF703 /* HNAPickerCollectionViewFlowLayout.m in Sources */,
 				CDBA9B7B1930835D006F292F /* MeetYou.xcdatamodeld in Sources */,
@@ -1252,6 +1326,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetYou/MeetYou-Prefix.pch";
 				INFOPLIST_FILE = "MeetYou/MeetYou-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MeetYou/Vendors/libWeiboSDK",
@@ -1276,6 +1351,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MeetYou/MeetYou-Prefix.pch";
 				INFOPLIST_FILE = "MeetYou/MeetYou-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MeetYou/Vendors/libWeiboSDK",
