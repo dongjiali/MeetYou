@@ -10,4 +10,6 @@
 
 @interface ActivitiesNearbyViewController : UIViewController
 
+@property (nonatomic,strong)  UIBarButtonItem *shaixuanActivitiesImet;
+@property (nonatomic,strong)  UINavigationController *nowNavigationController;
 @end

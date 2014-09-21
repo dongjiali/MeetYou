@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActivitiesViewController">
             <connections>
-                <outlet property="tableView" destination="jK4-EU-Nyg" id="pi0-2b-ZEA"/>
+                <outlet property="scrollView" destination="a2Q-2e-CLb" id="rji-AW-avB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,14 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jK4-EU-Nyg">
-                    <rect key="frame" x="0.0" y="64" width="320" height="454"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="SQt-U8-vWx"/>
-                        <outlet property="delegate" destination="-1" id="edn-Q8-ukG"/>
-                    </connections>
-                </tableView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sU2-0Z-eH1">
                     <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                     <subviews>
@@ -32,22 +24,37 @@
                             <state key="normal" title="附近活动">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="selectActivitiesStatus:" destination="-1" eventType="touchUpInside" id="OOi-CL-89H"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kj-1X-7t4">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kj-1X-7t4">
                             <rect key="frame" x="106" y="0.0" width="106" height="49"/>
                             <state key="normal" title="活动消息">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="selectActivitiesStatus:" destination="-1" eventType="touchUpInside" id="GHi-ek-8Ey"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="too-eS-TMb">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="too-eS-TMb">
                             <rect key="frame" x="214" y="0.0" width="106" height="49"/>
                             <state key="normal" title="我的活动">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="selectActivitiesStatus:" destination="-1" eventType="touchUpInside" id="dN4-UI-SZV"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.88277264030000002" green="0.88277264030000002" blue="0.88277264030000002" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-2e-CLb">
+                    <rect key="frame" x="0.0" y="64" width="320" height="456"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xxK-ax-8CQ"/>
+                    </connections>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
         </view>

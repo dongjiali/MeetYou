@@ -46,6 +46,13 @@
 		CDA66C3D19CECF9600116487 /* ActivitiesNearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C3B19CECF9600116487 /* ActivitiesNearbyViewController.xib */; };
 		CDA66C4119CED02100116487 /* ActivitiesMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C3F19CED02100116487 /* ActivitiesMyViewController.m */; };
 		CDA66C4219CED02100116487 /* ActivitiesMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C4019CED02100116487 /* ActivitiesMyViewController.xib */; };
+		CDA66C4719CEFC2700116487 /* ActivitiesMessageListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C4519CEFC2700116487 /* ActivitiesMessageListCell.m */; };
+		CDA66C4819CEFC2700116487 /* ActivitiesMessageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C4619CEFC2700116487 /* ActivitiesMessageListCell.xib */; };
+		CDA66C4D19CEFFE400116487 /* ActivitiesPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C4B19CEFFE400116487 /* ActivitiesPublishViewController.m */; };
+		CDA66C4E19CEFFE400116487 /* ActivitiesPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C4C19CEFFE400116487 /* ActivitiesPublishViewController.xib */; };
+		CDA66C5219CF0F5D00116487 /* ActivitiesDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA66C5019CF0F5D00116487 /* ActivitiesDetialViewController.m */; };
+		CDA66C5319CF0F5D00116487 /* ActivitiesDetialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C5119CF0F5D00116487 /* ActivitiesDetialViewController.xib */; };
+		CDA66C5519CF11DD00116487 /* 样本.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA66C5419CF11DD00116487 /* 样本.png */; };
 		CDBA9B661930835D006F292F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B651930835D006F292F /* Foundation.framework */; };
 		CDBA9B681930835D006F292F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B671930835D006F292F /* CoreGraphics.framework */; };
 		CDBA9B6A1930835D006F292F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBA9B691930835D006F292F /* UIKit.framework */; };
@@ -210,6 +217,16 @@
 		CDA66C3E19CED02100116487 /* ActivitiesMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesMyViewController.h; sourceTree = "<group>"; };
 		CDA66C3F19CED02100116487 /* ActivitiesMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesMyViewController.m; sourceTree = "<group>"; };
 		CDA66C4019CED02100116487 /* ActivitiesMyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesMyViewController.xib; sourceTree = "<group>"; };
+		CDA66C4419CEFC2700116487 /* ActivitiesMessageListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesMessageListCell.h; sourceTree = "<group>"; };
+		CDA66C4519CEFC2700116487 /* ActivitiesMessageListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesMessageListCell.m; sourceTree = "<group>"; };
+		CDA66C4619CEFC2700116487 /* ActivitiesMessageListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesMessageListCell.xib; sourceTree = "<group>"; };
+		CDA66C4A19CEFFE400116487 /* ActivitiesPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesPublishViewController.h; sourceTree = "<group>"; };
+		CDA66C4B19CEFFE400116487 /* ActivitiesPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesPublishViewController.m; sourceTree = "<group>"; };
+		CDA66C4C19CEFFE400116487 /* ActivitiesPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesPublishViewController.xib; sourceTree = "<group>"; };
+		CDA66C4F19CF0F5D00116487 /* ActivitiesDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesDetialViewController.h; sourceTree = "<group>"; };
+		CDA66C5019CF0F5D00116487 /* ActivitiesDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesDetialViewController.m; sourceTree = "<group>"; };
+		CDA66C5119CF0F5D00116487 /* ActivitiesDetialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivitiesDetialViewController.xib; sourceTree = "<group>"; };
+		CDA66C5419CF11DD00116487 /* 样本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "样本.png"; sourceTree = "<group>"; };
 		CDBA9B621930835D006F292F /* MeetYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBA9B651930835D006F292F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CDBA9B671930835D006F292F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -473,6 +490,7 @@
 		CDA66C3319CECF1A00116487 /* ActivitiesTooBar */ = {
 			isa = PBXGroup;
 			children = (
+				CDA66C4919CEFFA200116487 /* ActivitiesSonViewController */,
 				CDA66C3419CECF5C00116487 /* ActivitiesMessageViewController.h */,
 				CDA66C3519CECF5C00116487 /* ActivitiesMessageViewController.m */,
 				CDA66C3619CECF5C00116487 /* ActivitiesMessageViewController.xib */,
@@ -484,6 +502,29 @@
 				CDA66C4019CED02100116487 /* ActivitiesMyViewController.xib */,
 			);
 			name = ActivitiesTooBar;
+			sourceTree = "<group>";
+		};
+		CDA66C4319CEFBFD00116487 /* ActivitiesMessageListCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDA66C4419CEFC2700116487 /* ActivitiesMessageListCell.h */,
+				CDA66C4519CEFC2700116487 /* ActivitiesMessageListCell.m */,
+				CDA66C4619CEFC2700116487 /* ActivitiesMessageListCell.xib */,
+			);
+			name = ActivitiesMessageListCell;
+			sourceTree = "<group>";
+		};
+		CDA66C4919CEFFA200116487 /* ActivitiesSonViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CDA66C4A19CEFFE400116487 /* ActivitiesPublishViewController.h */,
+				CDA66C4B19CEFFE400116487 /* ActivitiesPublishViewController.m */,
+				CDA66C4C19CEFFE400116487 /* ActivitiesPublishViewController.xib */,
+				CDA66C4F19CF0F5D00116487 /* ActivitiesDetialViewController.h */,
+				CDA66C5019CF0F5D00116487 /* ActivitiesDetialViewController.m */,
+				CDA66C5119CF0F5D00116487 /* ActivitiesDetialViewController.xib */,
+			);
+			name = ActivitiesSonViewController;
 			sourceTree = "<group>";
 		};
 		CDBA9B591930835D006F292F = {
@@ -687,6 +728,7 @@
 		CDBA9BDC19308821006F292F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CDA66C5419CF11DD00116487 /* 样本.png */,
 				CDF5221A1983A2CC00F0A7AE /* bacgImage.png */,
 				CDF5221B1983A2CC00F0A7AE /* header.png */,
 				CD842D0319836AD00070F17C /* 红色@2x.png */,
@@ -859,6 +901,7 @@
 		CDCB605F19571DBD004E244B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CDA66C4319CEFBFD00116487 /* ActivitiesMessageListCell */,
 				CDA66C2C19CEC92000116487 /* ActivitiesTableListCell */,
 				CD3394CF1972A1D80042377B /* CommendTermFindCell */,
 				CD0CF8A6196436A5007BEB72 /* LeftView */,
@@ -1032,6 +1075,7 @@
 				CDBA9BC71930849E006F292F /* SliderContentViewController.xib in Resources */,
 				CDC4A56419824EF4005B68D4 /* 更多@2x.png in Resources */,
 				CDBA9BFF19308D12006F292F /* NavigationController.xib in Resources */,
+				CDA66C4819CEFC2700116487 /* ActivitiesMessageListCell.xib in Resources */,
 				CDC4A55219824519005B68D4 /* 线条@2x.png in Resources */,
 				CDF5221C1983A2CC00F0A7AE /* bacgImage.png in Resources */,
 				CDBA9BFD19308D12006F292F /* MainViewController.xib in Resources */,
@@ -1071,8 +1115,10 @@
 				CD5E7EEC19790FB700D2A469 /* area.plist in Resources */,
 				CD14629E19CEBC9500E857E5 /* ActivitiesSearchViewController.xib in Resources */,
 				CD0CF8AB196436D7007BEB72 /* LeftViewControllerTableViewCell.xib in Resources */,
+				CDA66C5519CF11DD00116487 /* 样本.png in Resources */,
 				CDF5221D1983A2CC00F0A7AE /* header.png in Resources */,
 				CDCB606419571DE0004E244B /* UserInfoTableViewCell.xib in Resources */,
+				CDA66C5319CF0F5D00116487 /* ActivitiesDetialViewController.xib in Resources */,
 				CDBA9C0619308D1F006F292F /* RegisterViewController.xib in Resources */,
 				CDBA9C2F193093B6006F292F /* MessageViewController.xib in Resources */,
 				CDC4A56319824EF4005B68D4 /* 个人信息默认@2x.png in Resources */,
@@ -1090,6 +1136,7 @@
 				CD3E4950197D32BF001ED097 /* 设置@2x.png in Resources */,
 				CDF0334F19837B3A00882699 /* 摇一摇@2x.png in Resources */,
 				CDBA9C401930946A006F292F /* CommendNavigationController.xib in Resources */,
+				CDA66C4E19CEFFE400116487 /* ActivitiesPublishViewController.xib in Resources */,
 				CDC4A56619824EF4005B68D4 /* 送花默认@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1151,10 +1198,12 @@
 				CDBA9C0D19308D29006F292F /* UserInfoNavigationController.m in Sources */,
 				CDBA9C3F1930946A006F292F /* CommendNavigationController.m in Sources */,
 				CDBA9C1E1930927C006F292F /* SettingViewController.m in Sources */,
+				CDA66C5219CF0F5D00116487 /* ActivitiesDetialViewController.m in Sources */,
 				CDCB605A1957184C004E244B /* MJRefreshHeaderView.m in Sources */,
 				CDBA9C441930947C006F292F /* CommendViewController.m in Sources */,
 				CDBA9B781930835D006F292F /* AppDelegate.m in Sources */,
 				CDF0334C198376A100882699 /* ShakeViewController.m in Sources */,
+				CDA66C4719CEFC2700116487 /* ActivitiesMessageListCell.m in Sources */,
 				CD3951321931DF3600E4CEA5 /* MTPhoto.m in Sources */,
 				CDCB603F1957120C004E244B /* UserInfoDataManager.m in Sources */,
 				CDA66C3C19CECF9600116487 /* ActivitiesNearbyViewController.m in Sources */,
@@ -1180,6 +1229,7 @@
 				CDCB606319571DE0004E244B /* UserInfoTableViewCell.m in Sources */,
 				CDE5D4BB19729905003FF703 /* HNAPickerCollectionViewFlowLayout.m in Sources */,
 				CDBA9B7B1930835D006F292F /* MeetYou.xcdatamodeld in Sources */,
+				CDA66C4D19CEFFE400116487 /* ActivitiesPublishViewController.m in Sources */,
 				CDBA9C0519308D1F006F292F /* RegisterViewController.m in Sources */,
 				CDCB60581957184C004E244B /* MJRefreshConst.m in Sources */,
 				CDA1B53D1931A18D0015D8D6 /* MTRequestSerializer.m in Sources */,

@@ -9,10 +9,23 @@
 #import "ActivitiesViewController.h"
 #import "ActivitiesSearchViewController.h"
 #import "ActivitiesTableListCell.h"
-@interface ActivitiesViewController ()
-@property (nonatomic,strong) NSMutableArray *activitiesArray;
-@property (nonatomic,weak) IBOutlet UITableView *tableView;
+#import "ActivitiesMessageViewController.h"
+#import "ActivitiesNearbyViewController.h"
+#import "ActivitiesMyViewController.h"
+@interface ActivitiesViewController ()<UIScrollViewDelegate>
+@property (nonatomic,weak) IBOutlet UIScrollView *scrollView;
+@property (nonatomic,weak) IBOutlet UIButton *ActivitiesNearbyButton;
+@property (nonatomic,weak) IBOutlet UIButton *ActivitiesMessageButton;
+@property (nonatomic,weak) IBOutlet UIButton *ActivitiesMyButton;
+
+@property (nonatomic,strong)ActivitiesMessageViewController *activitiesMessageViewController;
+@property (nonatomic,strong)ActivitiesNearbyViewController *activitiesNearbyViewController;
+@property (nonatomic,strong)ActivitiesMyViewController *activitiesMyViewController;
+
+@property (nonatomic,strong)  UIBarButtonItem *clearAllImet;
 @end
+
+const int barItemCount = 3;
 
 @implementation ActivitiesViewController
 
@@ -35,54 +48,89 @@
 
 - (void)setViews
 {
+    self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width * barItemCount, 0);
+    
     UIBarButtonItem *leftImet = [[UIBarButtonItem alloc]initWithTitle:@"左" style:UIBarButtonItemStylePlain target:self action:@selector(leftItemClick:)];
     self.navigationItem.leftBarButtonItem = leftImet;
+    [self changeActivitiesNearbyViewController];
+}
+
+- (IBAction)selectActivitiesStatus:(UIButton *)sender
+{
+    if (sender.tag == 0) {
+        [self changeActivitiesNearbyViewController];
+    }
     
-    UIBarButtonItem *rightImet = [[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick:)];
-    self.navigationItem.rightBarButtonItem = rightImet;
+    if (sender.tag == 1) {
+        [self changeActivitiesMessageViewController];
+    }
+    
+    if (sender.tag == 2) {
+        [self changeActivitiesMyViewController];
+    }
     
 }
 
 
-- (void)initialization
+- (void)changeActivitiesNearbyViewController
 {
-//    self.activitiesArray = @[@"关于",@"客服",@"更多",@"注销"];
-    [self.tableView registerClass:[ActivitiesTableListCell class] forCellReuseIdentifier:@"ActivitiesTableListCell"];// tableView
+    if (!_activitiesNearbyViewController) {
+        [self activitiesNearbyViewControllerInit];
+        _activitiesNearbyViewController.view.frame = CGRectMake(0, 0, _scrollView.width,_scrollView.height);
+        [_scrollView addSubview:_activitiesNearbyViewController.view];
+    }
+    [_scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
+    self.navigationItem.rightBarButtonItem = _activitiesNearbyViewController.shaixuanActivitiesImet;
+    _activitiesNearbyViewController.nowNavigationController = self.navigationController;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)changeActivitiesMessageViewController
 {
-    ActivitiesTableListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ActivitiesTableListCell" forIndexPath:indexPath];
-    return cell;
+    if (!_activitiesMessageViewController) {
+        [self activitiesMessageViewControllerInit];
+        _activitiesMessageViewController.view.frame = CGRectMake(_scrollView.width, 0, _scrollView.width,_scrollView.height);
+        [_scrollView addSubview:_activitiesMessageViewController.view];
+    }
+    [_scrollView setContentOffset:CGPointMake(_scrollView.width, 0) animated:NO];
+    self.navigationItem.rightBarButtonItem = _activitiesMessageViewController.clearAllImet;
+    _activitiesMessageViewController.nowNavigationController = self.navigationController;
 }
 
-#pragma mark -
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (void)changeActivitiesMyViewController
 {
-    return 1;
+    if (!_activitiesMyViewController) {
+        [self activitiesMyViewControllerInit];
+        _activitiesMyViewController.view.frame = CGRectMake(_scrollView.width * 2, 0, _scrollView.width,_scrollView.height);
+        [_scrollView addSubview:_activitiesMyViewController.view];
+    }
+    [_scrollView setContentOffset:CGPointMake(_scrollView.width *2, 0) animated:NO];
+    self.navigationItem.rightBarButtonItem = _activitiesMyViewController.fabuActivitiesImet;
+    _activitiesMyViewController.nowNavigationController = self.navigationController;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (void)activitiesMessageViewControllerInit
 {
-    return 2;
+    if (!_activitiesMessageViewController) {
+        self.activitiesMessageViewController =  [[ActivitiesMessageViewController alloc]init];
+    }
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)activitiesNearbyViewControllerInit
 {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (!_activitiesNearbyViewController) {
+        self.activitiesNearbyViewController = [[ActivitiesNearbyViewController alloc]init];
+    }
 }
 
-
+- (void)activitiesMyViewControllerInit
+{
+    if (!_activitiesMyViewController) {
+        self.activitiesMyViewController= [[ActivitiesMyViewController alloc]init];
+    }
+}
 
 -(void)leftItemClick:(id)sender{
     [[SliderViewController sharedSliderController] leftItemClick];
-}
-
-- (void)rightItemClick:(id)sender
-{
-    ActivitiesSearchViewController *viewControll = [[ActivitiesSearchViewController  alloc]init];
-    [self.navigationController pushViewController:viewControll animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

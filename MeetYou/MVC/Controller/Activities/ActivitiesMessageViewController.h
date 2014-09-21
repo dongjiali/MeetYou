@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ActivitiesMessageViewController : UIViewController
-
+@property (nonatomic,strong)  UIBarButtonItem *clearAllImet;
+@property (nonatomic,strong)  UINavigationController *nowNavigationController;
 @end

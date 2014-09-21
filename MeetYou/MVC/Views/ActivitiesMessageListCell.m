@@ -1,21 +1,20 @@
 //
-//  ActivitiesTableListCell.m
+//  ActivitiesMessageListCell.m
 //  MeetYou
 //
 //  Created by Curry on 14-9-21.
 //  Copyright (c) 2014年 MeetYou. All rights reserved.
 //
 
-#import "ActivitiesTableListCell.h"
+#import "ActivitiesMessageListCell.h"
 
-@implementation ActivitiesTableListCell
-
+@implementation ActivitiesMessageListCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        NSArray *xibArr = [[NSBundle mainBundle] loadNibNamed:@"ActivitiesTableListCell" owner:self options:nil];
+        NSArray *xibArr = [[NSBundle mainBundle] loadNibNamed:@"ActivitiesMessageListCell" owner:self options:nil];
         self = xibArr[0];
     }
     return self;

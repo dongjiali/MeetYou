@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ActivitiesMyViewController : UIViewController
-
+@property (nonatomic,strong)  UIBarButtonItem *fabuActivitiesImet;
+@property (nonatomic,strong)  UINavigationController *nowNavigationController;
 @end
